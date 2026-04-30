@@ -1,18 +1,8 @@
 # 🐟 Hackfish
 
-An AI agent skill that runs hackathon simulations to predict winners.
-
-Built for opencode, Claude Code, and other AI agent frameworks.
-
----
-
-## Pitch
-
-**Hackfish** mimics a complete hackathon — participants brainstorming, mentors advising, judges scoring — to predict which project will win.
+Mimic a complete hackathon — participants brainstorming, mentors advising, judges scoring — to predict which project will win.
 
 Built on insights from 260+ real hackathons. Runs a 6-tick simulation that generates realistic team dynamics, mentor feedback, and judge evaluations.
-
----
 
 ## Usage
 
@@ -26,8 +16,6 @@ Built on insights from 260+ real hackathons. Runs a 6-tick simulation that gener
 ```
 
 **Output:** Predicted winner with score and reasoning.
-
----
 
 ## Integrate
 
