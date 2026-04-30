@@ -19,9 +19,9 @@ In your WARP agent config:
 {
   "skills": [
     {
-      "name": "hackathon",
-      "description": "Run hackathon simulations to predict winners",
-      "commands": ["/hackathon"],
+      "name": "hackfish",
+      "description": "Run hackathon simulations with build guides",
+      "commands": ["hackathon", "simulate"],
       "files": ["SKILLS.md", "AGENTS.md"]
     }
   ]
@@ -32,32 +32,48 @@ In your WARP agent config:
 
 ## Usage
 
-```bash
-/hackathon ai
-/hackathon healthcare
-/hackathon web3
 ```
+use the skills in this repo to do a hackathon sim of https://hackathon-website.com
+```
+
+Hackfish will:
+1. Scrape the URL for theme, sponsors, tracks
+2. Run 8-tick simulation with 1000 agents
+3. Output winner + build guide + pitch deck
 
 ---
 
 ## How It Works in WARP
 
-1. Agent loads SKILLS.md to understand commands
-2. Spawns participant, mentor, judge agents from AGENTS.md
-3. Runs 6-tick simulation
-4. Returns predicted winner
+1. Agent loads SKILLS.md + AGENTS.md
+2. Scrapes hackathon URL for details
+3. Spawns 1000 participant agents + mentors + judges
+4. Runs 8-tick simulation with live Q&A
+5. Generates build guide for winner
 
 ---
 
-## Commands
+## Output
 
-| Command | Action |
-|---------|--------|
-| `/hackathon <theme>` | Run full simulation |
-| `/hackathon list` | Show supported themes |
+For predicted winner:
+- Build guide (48h hour-by-hour schedule)
+- Pitch deck (30-sec, 2-min, 5-min)
+- Judge Q&A prep
+- All agent memories stored
 
 ---
 
-## Themes
+## Example
 
-- ai, healthcare, web3, fintech, edtech, climate, civic
+```
+User: use the skills to simulate https://ethglobal.com/events/paris
+
+WARP: Scraping...
+  ✓ Theme: Web3
+  ✓ Sponsors: Stackup, Alchemy, Circle
+  Running 8-tick simulation...
+  
+  → Winner: SafeVault (Account Abstraction Wallet)
+  → Build Guide: 48h schedule included
+  → Memory: memories/hackathon_web3_2026-05-01/
+```
