@@ -1,0 +1,536 @@
+[
+  {
+    "name": "ETHGlobal Bangkok 2024",
+    "date": "November 15-17, 2024",
+    "location": "Bangkok, Thailand",
+    "prizePool": "$200,000+",
+    "tracksSponsors": ["LayerZero", "Pyth Network", "Uniswap Foundation", "Arbitrum", "Polygon", "Coinbase Developer Platform", "Worldcoin", "1inch", "Chainlink", "Protocol Labs", "Mina Protocol", "Blockscout", "Kinto", "Scroll"],
+    "judges": ["Vitalik Buterin", "Stani Kulechov", "Jesse Pollak"],
+    "grandPrizeWinners": [
+      {
+        "project": "DAOGenie",
+        "description": "AI Agents for simple DAO governance and automated execution, translating community decisions into real-world actions"
+      },
+      {
+        "project": "Zubernetes",
+        "description": "ZK proofs and SGX enclave for secure containerized workloads coordination"
+      },
+      {
+        "project": "Industry AI",
+        "description": "Autonomous Web3 Agents organization for DeFi and NFT tasks via natural language"
+      }
+    ],
+    "topProjects": ["LootGO", "Mini DAO", "Cat in a Box", "BubbleWars", "ETHPark-QR", "Dark Factory", "Metaloot"],
+    "techStack": ["AI Agents", "ZK Proofs", "TEE/SGX", "Solidity", "React"]
+  },
+  {
+    "name": "ETHGlobal Singapore 2024",
+    "date": "September 20-22, 2024",
+    "location": "Singapore",
+    "prizePool": "$200,000+",
+    "tracksSponsors": ["Worldcoin", "Uniswap Foundation", "1inch", "Mina Protocol", "Nethermind", "The Graph", "Sign Protocol", "AirDAO", "LayerZero"],
+    "judges": [],
+    "grandPrizeWinners": [
+      {
+        "project": "Clarity",
+        "description": "Web3 payment system with Sign Protocol for feedback verification and Worldcoin ID for identity"
+      },
+      {
+        "project": "Memora",
+        "description": "Public good integration with web3 AI"
+      },
+      {
+        "project": "Angpao.money",
+        "description": "Best Substream, ENS integration"
+      }
+    ],
+    "topProjects": ["Threeer", "Aether", "SQUIDL", "Nifi"],
+    "techStack": ["Sign Protocol", "Worldcoin", "World ID", "Mina Protocol", "Circle USDC"]
+  },
+  {
+    "name": "ETHGlobal New York 2024",
+    "date": "October 2024",
+    "location": "New York, USA",
+    "prizePool": "$200,000+",
+    "tracksSponsors": ["LayerZero", "Flare Network", "Hedera", "The Graph", "Worldcoin", "Scroll", "Filecoin", "Polygon", "Arbitrum"],
+    "judges": [],
+    "grandPrizeWinners": [],
+    "topProjects": ["Rivals", "Primer", "Swap Pay", "Pumpkin Spice Latte", "Noah", "Kyma Pay", "TX Delay Insurance", "x402-flash", "Pika Vault"],
+    "techStack": ["AR Gaming", "DeFi", "Cross-chain", "AI Agents"]
+  },
+  {
+    "name": "ETHGlobal London 2024",
+    "date": "March 15-17, 2024",
+    "location": "London, UK",
+    "prizePool": "$200,000+",
+    "tracksSponsors": ["Nethermind", "Worldcoin", "Arbitrum", "Chiliz", "Filecoin", "NEAR Protocol", "Gnosis", "Hyperlane", "ApeCoin", "Celo", "Uniswap Foundation", "Ethereum Foundation", "LayerZero", "Fhenix", "Avail", "Chainlink", "Flashbots", "Galadriel", "PancakeSwap", "Morpho Labs"],
+    "judges": [],
+    "grandPrizeWinners": [],
+    "topProjects": ["FHE Project", "HackerScore", "Magic Touch"],
+    "techStack": ["FHE", "Account Abstraction", "ZK"]
+  },
+  {
+    "name": "ETHGlobal Paris 2024",
+    "date": "2024",
+    "location": "Paris, France",
+    "prizePool": "$100,000+",
+    "tracksSponsors": ["1inch", "Filecoin", "Linea", "zkBob", "UMA", "Airstack", "Worldcoin", "Metamask", "The Graph", "QuickNode", "ApeCoin DAO", "Mask Network", "Neon EVM", "Push Protocol"],
+    "judges": [],
+    "grandPrizeWinners": [
+      {
+        "project": "Wallet Hopper",
+        "description": "Enables a wallet address to express full details about how you want to receive each asset"
+      }
+    ],
+    "topProjects": ["Emeth", "Delta V", "ETHWaldo", "Builder's Garden", "Gaston", "Trustky"],
+    "techStack": ["Filecoin", "Worldcoin", "XMTP", "Push Protocol", "TypeScript"]
+  },
+  {
+    "name": "ETHGlobal Tokyo 2023",
+    "date": "April 14-16, 2023",
+    "location": "Tokyo, Japan",
+    "prizePool": "$100,000+",
+    "tracksSponsors": ["Scroll", "Polygon", "Worldcoin", "Lens", "Metamask", "Airstack", "EF (Account Abstraction)", "EF (ZK)"],
+    "judges": ["Austin Griffith", "Aya Miyaguchi", "Balaji Srinivasan", "Dennison Bertram", "Stani Kulechov", "Vitalik Buterin"],
+    "grandPrizeWinners": [
+      {
+        "project": "DeFi Struct",
+        "description": "Generalized 4626 vault for structured products with clear risk and reward information"
+      },
+      {
+        "project": "MAID",
+        "description": "Coupon factory for custom ERC3525 coupons based on custom requirements"
+      },
+      {
+        "project": "BorrowFi",
+        "description": "Aggregator for borrowing at best rates across protocols"
+      }
+    ],
+    "topProjects": ["Myna", "Splend", "Mimiku", "Octoplorer", "Gogaku!!!", "YORU", "Wave"],
+    "techStack": ["Aave", "GHO", "ERC3525", "Account Abstraction", "ZK"]
+  },
+  {
+    "name": "ETHGlobal Superhack 2024",
+    "date": "August 2-16, 2024",
+    "location": "Online (Async)",
+    "prizePool": "$200,000+",
+    "tracksSponsors": ["Optimism", "Worldcoin", "Base", "Superform", "Celo", "EAS", "Conduit", "Pyth", "Fraxtal", "Metal L2", "Blockscout", "Chainlink", "Mode", "Tenderly", "Goldsky", "thirdweb", "Farcaster", "Alchemy", "LayerZero", "Hyperlane", "Zora"],
+    "judges": ["Kartik Talwar", "Rory Arredondo", "Jacob Willemsma", "Mattie Fairchild", "Linda Xie"],
+    "grandPrizeWinners": [
+      {
+        "project": "Tamayoshi",
+        "description": "Gas-free on-chain game similar to Tamagotchi"
+      },
+      {
+        "project": "ChooseADelegate",
+        "description": "Farcaster framework for DAO voting delegation via social graphs"
+      },
+      {
+        "project": "Century Pay",
+        "description": "Discord bot for wallet signing and transactions using Base smart wallet"
+      },
+      {
+        "project": "EthDrive",
+        "description": "Google Drive-like interface with ERC6551 for asset management"
+      },
+      {
+        "project": "QuickPay",
+        "description": "USDC payments for physical merchants in Mongolia via Qpay system"
+      }
+    ],
+    "topProjects": ["Kiss or Slap", "HomeBase", "Draw Dash", "FlexPay", "Supersplit"],
+    "techStack": ["Base", "Optimism", "ERC-6551", "Account Abstraction", "Farcaster Frames"]
+  },
+  {
+    "name": "ETHGlobal San Francisco 2024",
+    "date": "October 18-20, 2024",
+    "location": "San Francisco, USA",
+    "prizePool": "$400,000+",
+    "tracksSponsors": ["LayerZero", "SKALE Network", "Uniswap Foundation", "Sign Protocol", "AirDAO", "Gnosis Chain", "The Graph", "Lit Protocol", "XMTP", "Coinbase Developer Platform", "Chronicle Protocol", "NounsDAO"],
+    "judges": ["Vitalik Buterin", "Kartik Talwar", "Jacob Tucker", "Georgios Konstantopoulos"],
+    "grandPrizeWinners": [
+      {
+        "project": "UniV4Backtester",
+        "description": "Institutional-grade Uniswap V4 backtester replaying V3 liquidity events"
+      },
+      {
+        "project": "PumpRoyale",
+        "description": "Web3 fitness competition with USDC deposits and challenge rewards"
+      },
+      {
+        "project": "VVLDrizzy",
+        "description": "Web3 tool for viral video authorization with NFT watermarking"
+      }
+    ],
+    "topProjects": ["IP Infinity", "OmiSwap", "HelloACAI", "DAOsaster", "Chain Waves", "BuildBlocks", "Betsy"],
+    "techStack": ["Uniswap V4", "Story Protocol", "AI Agents", "Cross-chain", "Skale"]
+  },
+  {
+    "name": "ETHSF 2025",
+    "date": "March 2025",
+    "location": "San Francisco, USA",
+    "prizePool": "6 ETH + $29,406",
+    "tracksSponsors": ["Self Protocol by Celo", "Vitalik Buterin", "Tomasz Stanczak", "Nemi Dalal"],
+    "judges": [],
+    "grandPrizeWinners": [
+      {
+        "project": "Urbexium",
+        "description": "Built at ETHSF, won Coinbase Developer Platform First Prize"
+      }
+    ],
+    "topProjects": [],
+    "techStack": ["Celo", "Self Protocol"]
+  },
+  {
+    "name": "ETHBerlin 2024",
+    "date": "2024",
+    "location": "Berlin, Germany",
+    "prizePool": "$56,000",
+    "tracksSponsors": [],
+    "judges": [],
+    "grandPrizeWinners": [
+      {
+        "project": "rsociety",
+        "description": "Redistributes hackathon Open Track prize to all hackers equally"
+      },
+      {
+        "project": "Privacy Mempool",
+        "description": "Anonymity-preserving gossip for Bitcoin mempool"
+      },
+      {
+        "project": "Desentralized TLS",
+        "description": "Decentralized TLS verification"
+      }
+    ],
+    "topProjects": ["Chainmail", "zk TRIPSTER", "Shadowlings", "Voto", "zk-twitter", "Zumeet", "Zukofi"],
+    "techStack": ["ZK Proofs", "Privacy", "Infrastructure"]
+  },
+  {
+    "name": "ETHPrague 2024",
+    "date": "May 31 - June 2, 2024",
+    "location": "Prague, Czech Republic",
+    "prizePool": "$86,500",
+    "tracksSponsors": ["The Graph", "Zircuit", "EigenLayer", "Optimism", "ICP", "Blockscout", "LayerZero", "Flare Network", "Hedera", "Rootstock", "Beraborrow", "vlayer"],
+    "judges": ["Vitalik Buterin", "Laurence Kirk", "Kartik Talwar", "Larry Čermák"],
+    "grandPrizeWinners": [
+      {
+        "project": "Wallet Warden",
+        "description": "Platform for evaluating Ethereum wallet reputation through blockchain analysis"
+      },
+      {
+        "project": "Wrld Map",
+        "description": "World Mini App, Blockscout integration"
+      },
+      {
+        "project": "CzechOut",
+        "description": "ERC-7824 and Nitro Protocol integration"
+      }
+    ],
+    "topProjects": [],
+    "techStack": ["Blockscout API", "EVM", "ZK"]
+  },
+  {
+    "name": "ETHAmsterdam 2022",
+    "date": "April 22-24, 2022",
+    "location": "Amsterdam, Netherlands",
+    "prizePool": "$400,000+",
+    "tracksSponsors": ["1inch Network", "Aave Grants DAO", "Mina Protocol", "Optimism", "SKALE Network", "WalletConnect", "Gearbox Protocol", "IPFS/Filecoin", "Livepeer", "Polygon", "Tatum", "dYdX Grants", "Connext", "Superfluid", "Voltz", "Lens Protocol", "The Graph", "Uniswap Grants", "Web3Auth", "Gnosis Safe", "Coinbase"],
+    "judges": ["Vitalik Buterin", "Stani Kulechov", "Anthony Sassano", "Linda Xie", "Juan Benet"],
+    "grandPrizeWinners": [
+      {
+        "project": "Retr0x",
+        "description": "Fully on-chain retro-generative public goods funding app"
+      },
+      {
+        "project": "Nimi.eth",
+        "description": "Build and deploy web3 profile page to .eth domain"
+      },
+      {
+        "project": "Hexagons Protocol",
+        "description": "Protocol for social-media-driven smart contracts"
+      }
+    ],
+    "topProjects": ["Democrazy", "FLOAN", "Tempra", "Daora", "Yieldgate", "Detris", "Activitydao", "Creatorsight"],
+    "techStack": ["Optimism", "Superfluid", "Lens Protocol", "IPFS", "ZK"]
+  },
+  {
+    "name": "ETHDubai 2024",
+    "date": "April 2024",
+    "location": "Dubai, UAE",
+    "prizePool": "$25,000",
+    "tracksSponsors": ["Bebop", "Chainlink", "Internet Computer", "Base", "XDC Network", "Biconomy", "Ankr", "Oort", "Neo", "Gnosis", "Morph"],
+    "judges": ["Eric Bishard", "Preetam Rao"],
+    "grandPrizeWinners": [
+      {
+        "project": "HabibiCross",
+        "description": "Chainlink prize winner at ETHDubai"
+      },
+      {
+        "project": "SurvivalBird",
+        "description": "Base prize winner - game about storm in Dubai"
+      }
+    ],
+    "topProjects": [],
+    "techStack": ["Chainlink", "Base", "EVM"]
+  },
+  {
+    "name": "ETHKL 2024",
+    "date": "2024",
+    "location": "Kuala Lumpur, Malaysia",
+    "prizePool": "$38,800",
+    "tracksSponsors": ["Manta Network", "Scroll", "Worldcoin", "The Graph", "Internet Computer", "Privacy & Scaling Explorations", "ORA"],
+    "judges": ["Daryl Lim", "Harith Kamarul"],
+    "grandPrizeWinners": [],
+    "topProjects": ["Eth TrustNet"],
+    "techStack": ["World ID", "Manta", "Scroll"]
+  },
+  {
+    "name": "ETHToronto 2024",
+    "date": "August 13-14, 2024",
+    "location": "Toronto, Canada",
+    "prizePool": "$100,000+",
+    "tracksSponsors": ["SEAL", "SwarmZero.ai", "ICP HUB Canada", "HyperCycle", "Chainlink Labs", "EAS", "Bountycaster", "Seal", "SwarmZero.ai", "K9Finance DAO", "Cross Finance"],
+    "judges": [],
+    "grandPrizeWinners": [
+      {
+        "project": "Castlingo",
+        "description": "SEAL Bounty 1st Place"
+      },
+      {
+        "project": "CubeLand | Voxelverses",
+        "description": "SwarmZero.ai 1st Place"
+      },
+      {
+        "project": "DKeeper",
+        "description": "ICP HUB Canada 1st Place"
+      }
+    ],
+    "topProjects": ["MilestoneMaker", "airdrop_agent_SwarmZero", "icp-chainvault"],
+    "techStack": ["ICP", "AI Agents", "Blockchain"]
+  },
+  {
+    "name": "ETHKyiv 2024",
+    "date": "June 21-22, 2024",
+    "location": "Kyiv, Ukraine",
+    "prizePool": "$100,000+",
+    "tracksSponsors": ["Intmax", "The Graph", "Scroll", "Yellow Network", "Peanut Trade"],
+    "judges": ["Louis Bellet", "Mike Silagadze", "Hanzel Anchia"],
+    "grandPrizeWinners": [
+      {
+        "project": "BunnBattle",
+        "description": "General track 1st place - $15,000 + $5,000 incrypted media support"
+      },
+      {
+        "project": "KYD",
+        "description": "General track 2nd place, The Graph and Scroll bounty winner"
+      },
+      {
+        "project": "Smart Posluhy",
+        "description": "General track 3rd place"
+      }
+    ],
+    "topProjects": ["YeezyWallet", "Fundcraft", "YellowConnect", "Hempstarter"],
+    "techStack": ["The Graph", "Scroll", "Yellow Network", "Intmax"]
+  },
+  {
+    "name": "ETHWarsaw 2024",
+    "date": "September 5-8, 2024",
+    "location": "Warsaw, Poland",
+    "prizePool": "$50,000+",
+    "tracksSponsors": ["Golem Network", "Aleph Zero", "Starknet", "Arweave", "RedStone", "Request Network", "Celo", "Worldcoin", "DragonSwap", "Zircuit", "Data Lake", "ENS", "zkVerify", "BuidlGuild", "Herodotus", "Mantle", "DBForest", "ORA", "Optimism"],
+    "judges": ["Daniel Izdebski", "Monika Zając", "Aaron Deruvo", "Marek Olszewski"],
+    "grandPrizeWinners": [],
+    "topProjects": ["Web3D Experience"],
+    "techStack": ["Aleph Zero", "Worldcoin", "Mantle", "ZK"]
+  },
+  {
+    "name": "ETHBeijing 2024",
+    "date": "May 17-19, 2024",
+    "location": "Beijing, China",
+    "prizePool": "$30,000+",
+    "tracksSponsors": ["Scroll", "Ethereum Foundation"],
+    "judges": [],
+    "grandPrizeWinners": [
+      {
+        "project": "POLP (Proof of Location Protocol)",
+        "description": "Public Goods track 1st place"
+      },
+      {
+        "project": "Centralized-PBS",
+        "description": "Open Research track 1st place"
+      },
+      {
+        "project": "annihilate fi",
+        "description": "Layer2 track 1st place"
+      }
+    ],
+    "topProjects": ["2PM Network", "ZK-Discord", "NFT_search", "NomadBnB", "zkHumanDID", "Nexus"],
+    "techStack": ["Scroll", "Layer2", "Public Goods", "Open Research"]
+  },
+  {
+    "name": "ETHOnline 2023",
+    "date": "October 6-27, 2023",
+    "location": "Online",
+    "prizePool": "$200,000+",
+    "tracksSponsors": ["Spark", "Scroll", "Mask Network", "Safe", "Hyperlane", "Polygon", "Filecoin", "UMA", "Mantle", "ApeCoin", "Wormhole", "Sismo", "Connext", "Axelar", "Compound Grants", "Chainlink", "Lit Protocol", "The Graph", "Push Protocol", "XMTP", "Uniswap Foundation", "Tableland", "Cometh", "Aztec"],
+    "judges": [],
+    "grandPrizeWinners": [
+      {
+        "project": "WalletX",
+        "description": "Smart wallet browser extension"
+      },
+      {
+        "project": "Koinu",
+        "description": "npm library for cross-chain token transfers"
+      },
+      {
+        "project": "PACKD",
+        "description": "Create and share digital asset bundles"
+      }
+    ],
+    "topProjects": ["Cosmic Cowboys", "zkVRF", "ShopConnect", "Cryptopolis", "Bear Bonds", "SherLOCKED", "ZTF"],
+    "techStack": ["ZK", "Cross-chain", "FHE", "x402"]
+  },
+  {
+    "name": "ETHOnline 2024",
+    "date": "2024",
+    "location": "Online",
+    "prizePool": "$200,000+",
+    "tracksSponsors": ["LayerZero", "Mina Protocol", "Sign Protocol", "Kinto", "Chiliz", "Chainlink", "XMTP", "Galadriel", "Rootstock", "Hedera", "Lit Protocol", "Fhenix", "Nillion", "SSV Network", "Web3Auth", "Stackr Labs", "Nethermind"],
+    "judges": [],
+    "grandPrizeWinners": [],
+    "topProjects": [],
+    "techStack": ["ZK", "FHE", "Cross-chain"]
+  },
+  {
+    "name": "ETHGlobal Brussels 2024",
+    "date": "July 12-14, 2024",
+    "location": "Brussels, Belgium",
+    "prizePool": "$475,000",
+    "tracksSponsors": ["LayerZero", "Worldcoin", "Uniswap Foundation", "Blockscout", "Filecoin", "PancakeSwap", "Arbitrum", "Avail", "Nethermind", "NEAR Protocol", "Chronicle Protocol", "Flare Network", "Pyth Network", "ApeCoin", "Celo", "Inco Network", "Zircuit", "The Graph", "Chainlink", "Hyperlane", "Zerion", "Galadriel", "Rootstock", "Web3Auth", "Fhenix", "Nillion", "INTMAX", "WalletConnect", "MetaMask & Linea", "NounsDAO", "1inch", "Neon EVM"],
+    "judges": ["Vitalik Buterin", "Kartik Talwar", "Tomasz Stanczak", "Georgios Konstantopoulos"],
+    "grandPrizeWinners": [
+      {
+        "project": "BananaBets",
+        "description": "Betting platform"
+      },
+      {
+        "project": "Cook Some Hooks",
+        "description": "AI+DeFi project"
+      },
+      {
+        "project": "Zarathustra",
+        "description": "AI Q&A"
+      }
+    ],
+    "topProjects": ["Tap Ether", "Oh Snap!", "Omma Cash", "Piggy Wallet", "AdFHE", "Ephi", "Individuum"],
+    "techStack": ["AI", "DeFi", "Wallet", "Blinks", "FHE"]
+  },
+  {
+    "name": "ETHGlobal Buenos Aires 2025",
+    "date": "November 21-23, 2025",
+    "location": "Buenos Aires, Argentina",
+    "prizePool": "$500,000",
+    "tracksSponsors": ["LayerZero", "Pyth Network", "Uniswap Foundation", "Coinbase Developer Platform", "Filecoin", "Protocol Labs", "EVVM", "Chainlink", "Chiliz", "Zircuit", "Nethermind", "Flare Network", "Hedera", "Worldcoin", "Anchorage Digital", "Babylon Labs"],
+    "judges": [],
+    "grandPrizeWinners": [
+      {
+        "project": "Paybot",
+        "description": "X402 Payment Required protocol for physical device access control"
+      },
+      {
+        "project": "JetLagged",
+        "description": "Decentralized flight delay prediction market on Celo and Oasis"
+      },
+      {
+        "project": "Hubble Trading Arena",
+        "description": "On-chain autonomous trading with AI agents using x402 and ERC-8004"
+      }
+    ],
+    "topProjects": ["Payload Exchange", "Yoga", "LensMint Web3 Camera", "Halo", "zkx402", "Aqua0", "BMCP"],
+    "techStack": ["x402", "AI Agents", "DeFi", "Prediction Market", "ZK", "Cross-chain"]
+  },
+  {
+    "name": "ETHDenver 2024",
+    "date": "2024",
+    "location": "Denver, USA",
+    "prizePool": "$80,000+",
+    "tracksSponsors": ["Polkadot", "EigenLayer", "Zircuit", "Okto", "Optimism", "Hedera", "Gravity by Galxe", "Coinbase Developer Platform", "Internet Computer", "Humanity Protocol", "Silo Finance", "Uniswap", "Decent", "Taraxa", "zkSync", "Wire Network", "Somnia Network", "Wormhole", "Olas", "Euler Labs", "Kite Ai", "Divvi", "zkVerify Foundation", "Hacken", "Midnight Network", "Arweave", "BNB Chain", "EthStorage", "Sui", "Quai", "Chainlink"],
+    "judges": [],
+    "grandPrizeWinners": [
+      {
+        "project": "BeFit",
+        "description": "Quadratic voting winner"
+      },
+      {
+        "project": "Egg Wars",
+        "description": "Game on Base"
+      },
+      {
+        "project": "Bubblewars.io",
+        "description": "Telegram battle game"
+      }
+    ],
+    "topProjects": ["ZKML Options Liquidator", "ContractAid", "Michi Protocol"],
+    "techStack": ["Base", "DeFi", "Gaming", "AI"]
+  },
+  {
+    "name": "ETHGlobal Taipei 2025",
+    "date": "April 4-6, 2025",
+    "location": "Taipei, Taiwan",
+    "prizePool": "$200,000+",
+    "tracksSponsors": ["1inch", "World", "Rootstock", "Nodit", "Polygon", "Circle", "ENS", "HashKey Chain", "Hyperlane", "Celo", "Citrea", "Self Protocol", "Flow", "Zircuit", "Curvegrid", "Uniswap Foundation", "Saga", "Metal"],
+    "judges": ["Vitalik Buterin", "Kartik Talwar", "Loi Luu", "Marek Olszewski"],
+    "grandPrizeWinners": [
+      {
+        "project": "Signals",
+        "description": "Bitcoin price prediction app"
+      },
+      {
+        "project": "EthereumFighter",
+        "description": "DeFi trading"
+      },
+      {
+        "project": "cellfi",
+        "description": "Peer-to-peer payment without internet"
+      }
+    ],
+    "topProjects": ["AskCiaShen", "Solva", "HowDoxxedAmI?", "DynaVest", "Nomadia"],
+    "techStack": ["AI Agents", "DeFi", "Privacy", "Off-chain Payments", "Citrea"]
+  },
+  {
+    "name": "ETHOnline 2025",
+    "date": "2025",
+    "location": "Online",
+    "prizePool": "$100,000+",
+    "tracksSponsors": ["Avail", "Blockscout", "PayPal USD", "Hedera", "Artificial Superintelligence Alliance", "Envio", "Lit Protocol", "Pyth", "Hardhat", "Arcology", "EVVM"],
+    "judges": [],
+    "grandPrizeWinners": [],
+    "topProjects": [],
+    "techStack": ["AI Agents", "DeFi"]
+  },
+  {
+    "name": "ETHGlobal New York 2025",
+    "date": "August 2025",
+    "location": "New York, USA",
+    "prizePool": "$200,000+",
+    "tracksSponsors": ["LayerZero", "Hedera", "Flare Network", "Worldcoin", "1inch", "Fern", "Dynamic", "Privy"],
+    "judges": [],
+    "grandPrizeWinners": [
+      {
+        "project": "Etherius",
+        "description": "ASI Alliance 1st Prize"
+      },
+      {
+        "project": "MintCondition",
+        "description": "ASI Alliance 2nd Prize"
+      },
+      {
+        "project": "Waterfall",
+        "description": "ASI Alliance 3rd Prize"
+      }
+    ],
+    "topProjects": ["PDFi", "The42", "Solvify", "Wisdom", "dBeats"],
+    "techStack": ["AI", "DeFi", "Consumer App"]
+  }
+]

@@ -1,0 +1,940 @@
+[
+  {
+    "eventName": "MIT Hacking Medicine Grand Hack",
+    "dates": "April 20-23, 2023",
+    "organizer": "MIT Hacking Medicine",
+    "location": "Cambridge, Massachusetts",
+    "prizePool": "$1,500 first place (Patient Safety track)",
+    "tracks": [
+      "Patient Safety (sponsored by Pittsburgh Regional Health Initiative)",
+      "InterSystems Challenge"
+    ],
+    "sponsors": [
+      "InterSystems",
+      "Patient Safety Technology Challenge",
+      "Google Health"
+    ],
+    "winners": [
+      {
+        "project": "Octila Health",
+        "description": "Home tracking service for mental health care with decentralized monitoring using conversational chatbots",
+        "techStack": "Conversational AI, topological data analysis",
+        "track": "Patient Safety",
+        "placement": "1st Place"
+      },
+      {
+        "project": "NexxStep Health",
+        "description": "Mobile-based personalized patient action plan with EHR integration",
+        "techStack": "EHR integration, pre-populated action plans",
+        "track": "Patient Safety",
+        "placement": "2nd Place"
+      },
+      {
+        "project": "DiaQR",
+        "description": "AI-based solution for diabetic foot ulcer prevention and management",
+        "techStack": "AI/ML, conversational AI, sensor technology",
+        "track": "Best AI/ML Solution",
+        "placement": "Winner"
+      },
+      {
+        "project": "HospiTwin",
+        "description": "Digital twin for emergency department bottleneck simulation",
+        "techStack": "LLM, digital twin technology",
+        "track": "InterSystems Challenge - Best Use of GenAI",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "Focus on AI/ML solutions for clinical problems",
+      "Strong emphasis on EHR interoperability",
+      "Patient safety as consistent theme",
+      "Practical 48h buildable solutions"
+    ]
+  },
+  {
+    "eventName": "MIT Hacking Medicine Grand Hack 2025",
+    "dates": "2025",
+    "organizer": "MIT Hacking Medicine",
+    "location": "Cambridge, Massachusetts",
+    "prizePool": "Multiple track prizes",
+    "tracks": [
+      "Chronic Diseases",
+      "Mental Health"
+    ],
+    "sponsors": [],
+    "winners": [
+      {
+        "project": "Unreliable LLM",
+        "description": "Rehabilitation platform for post-stroke patients enabling care outside hospital",
+        "techStack": "LLM",
+        "track": "Chronic Diseases",
+        "placement": "Winner"
+      },
+      {
+        "project": "KoQo",
+        "description": "AI-powered app supporting caregivers of individuals with autism",
+        "techStack": "AI",
+        "track": "Mental Health",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "AI-powered solutions",
+      "Caregiver support focus",
+      "Rehabilitation and chronic disease management"
+    ]
+  },
+  {
+    "eventName": "Stanford TreeHacks",
+    "dates": "February 17-19, 2023",
+    "organizer": "Stanford University",
+    "location": "Stanford, California",
+    "prizePool": "$130,000+ total prizes",
+    "tracks": [
+      "Healthcare Grand Prize",
+      "Patient Safety Technology",
+      "Moonshot Prize"
+    ],
+    "sponsors": [
+      "Pittsburgh Regional Health Initiative"
+    ],
+    "winners": [
+      {
+        "project": "Amanuensis",
+        "description": "AI-enabled physician assistant for automated clinical summarization and question generation",
+        "techStack": "AI/ML, NLP",
+        "track": "Big Idea - Patient Safety Technology",
+        "placement": "1st Place"
+      },
+      {
+        "project": "AfterAware",
+        "description": "Post-op SMS communication platform for patient recovery monitoring",
+        "techStack": "Twilio, Flask, Google Healthcare NLP, Retool",
+        "track": "Healthcare",
+        "placement": "Finalist"
+      }
+    ],
+    "patterns": [
+      "Healthcare workflow automation",
+      "Post-operative care solutions",
+      "EHR integration focus"
+    ]
+  },
+  {
+    "eventName": "Stanford TreeHacks 2024",
+    "dates": "February 16-18, 2024",
+    "organizer": "Stanford University",
+    "location": "Stanford, California",
+    "prizePool": "$130,000+",
+    "tracks": [
+      "Healthcare Grand Prize",
+      "Moonshot Grand Prize"
+    ],
+    "sponsors": [],
+    "winners": [
+      {
+        "project": "Baymax",
+        "description": "AI-powered robot arm for assisting mobility-impaired and elderly individuals",
+        "techStack": "OpenAI Whisper, GPT-4, OpenCV, CNN",
+        "track": "Moonshot",
+        "placement": "Grand Prize - $10,000"
+      }
+    ],
+    "patterns": [
+      "Robotics + AI for accessibility",
+      "Hardware + software integration",
+      "Elder care solutions"
+    ]
+  },
+  {
+    "eventName": "Harvard T.H. Chan School Health Systems Innovation Hackathon",
+    "dates": "2024",
+    "organizer": "Harvard T.H. Chan School of Public Health",
+    "location": "8 cities globally",
+    "prizePool": "Mentorship + incubation",
+    "tracks": [
+      "Healthcare innovation"
+    ],
+    "sponsors": [],
+    "winners": [
+      {
+        "project": "SNIFF",
+        "description": "Smart Neoplasm Identification by Fume Fingerprinting - non-invasive breast cancer margin detection",
+        "techStack": "AI algorithms, gas analysis",
+        "track": "Overall Winner",
+        "placement": "1st Place"
+      },
+      {
+        "project": "ZophIA.tech",
+        "description": "AI support tool for diagnosing mental disorders through speech analysis",
+        "techStack": "AI, Geometric Analysis, speech recognition",
+        "track": "2nd Place",
+        "placement": "2nd Place"
+      },
+      {
+        "project": "SweetAudio",
+        "description": "Non-invasive glucose monitoring using voice analysis",
+        "techStack": "AI, vocal biomarkers",
+        "track": "3rd Place",
+        "placement": "3rd Place"
+      }
+    ],
+    "patterns": [
+      "AI-powered diagnostics",
+      "Non-invasive detection methods",
+      "Global health focus"
+    ]
+  },
+  {
+    "eventName": "FDA America's Got Regulatory Science Talent Competition",
+    "dates": "April 13, 2023",
+    "organizer": "University of Maryland CERSI + University of Rochester CTSI",
+    "location": "FDA Headquarters",
+    "prizePool": "Presentation opportunities",
+    "tracks": [
+      "Regulatory Science"
+    ],
+    "sponsors": ["FDA"],
+    "winners": [
+      {
+        "project": "FoodTrace AI",
+        "description": "AI for rapid foodborne illness outbreak prediction",
+        "techStack": "AI, data correlation",
+        "track": "1st Place",
+        "placement": "Winner"
+      },
+      {
+        "project": "MagiKRx",
+        "description": "Real-world evidence generation for Alzheimer's drug Lecanemab",
+        "techStack": "Web app",
+        "track": "2nd Place",
+        "placement": "Winner"
+      },
+      {
+        "project": "NociRx",
+        "description": "Geriatric-friendly OTC analgesic selection app",
+        "techStack": "Mobile app, text-speech",
+        "track": "3rd Place",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "Regulatory-focused solutions",
+      "Drug safety",
+      "Food safety"
+    ]
+  },
+  {
+    "eventName": "Cleveland Medical Hackathon",
+    "dates": "October 21-22, 2017",
+    "organizer": "Cleveland Clinic, University Hospitals, MetroHealth",
+    "location": "Cleveland, Ohio",
+    "prizePool": "$7,000 first place",
+    "tracks": [
+      "Precision Medicine",
+      "Population Health",
+      "Public Health",
+      "Opioid Epidemic"
+    ],
+    "sponsors": ["HIMSS", "CoverMyMeds"],
+    "winners": [
+      {
+        "project": "CrasBand",
+        "description": "Wearable cardiac monitoring band with risk-based notifications",
+        "techStack": "Wearable sensors",
+        "track": "1st Place",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "Wearables for monitoring",
+      "Population health focus",
+      "Opioid crisis solutions"
+    ]
+  },
+  {
+    "eventName": "Cleveland Medical Hackathon 2016",
+    "dates": "2016",
+    "organizer": "Cleveland Clinic + partners",
+    "location": "Cleveland, Ohio",
+    "prizePool": "$40,000+ prizes",
+    "tracks": [
+      "Care Redesign",
+      "Population Health",
+      "Payment Redesign",
+      "Access Redesign"
+    ],
+    "sponsors": [],
+    "winners": [
+      {
+        "project": "H.A.N.D.",
+        "description": "Wearable sensors for chemotherapy-induced peripheral neuropathy",
+        "techStack": "Wearable sensors",
+        "track": "1st Place",
+        "placement": "Winner"
+      },
+      {
+        "project": "FLARE",
+        "description": "Crowdsourcing app for opioid overdose assistance",
+        "techStack": "Mobile app, crowdsourcing",
+        "track": "2nd Place",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "eventName": "Weill Cornell Medicine Health Hackathon",
+    "dates": "March 8-10, 2024",
+    "organizer": "Weill Cornell Medicine CTSC + Entrepreneurship at Cornell",
+    "location": "Ithaca, New York",
+    "prizePool": "$3,000 grand prize",
+    "tracks": [
+      "Patient Safety"
+    ],
+    "sponsors": ["Johnson & Johnson", "Patient Safety Technology Challenge"],
+    "winners": [
+      {
+        "project": "Current Care",
+        "description": "Device to prevent bedsores using electrical stimulation",
+        "techStack": "Hardware, electrical stimulation",
+        "track": "Grand Prize",
+        "placement": "1st Place"
+      },
+      {
+        "project": "Cedar",
+        "description": "Wearable for carotid artery stroke prevention",
+        "techStack": "Wearable sensors",
+        "track": "Most Innovative",
+        "placement": "Winner"
+      },
+      {
+        "project": "Team Rocket",
+        "description": "Virtual assistant for home health nurses",
+        "techStack": "AI/ML",
+        "track": "Best Use of AI",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "Medical hardware solutions",
+      "AI for healthcare workflows",
+      "Patient safety focus"
+    ]
+  },
+  {
+    "eventName": "Novartis Digital Gesundheitspreis",
+    "dates": "March 2023",
+    "organizer": "Novartis Deutschland",
+    "location": "Nuremberg, Germany",
+    "prizePool": "€60,000 total",
+    "tracks": [
+      "Digital Health Innovation"
+    ],
+    "sponsors": ["Novartis"],
+    "winners": [
+      {
+        "project": "GerontoNet",
+        "description": "Regional networking platform for elderly care",
+        "techStack": "Platform technology",
+        "track": "1st Place",
+        "placement": "€25,000"
+      },
+      {
+        "project": "cureVision",
+        "description": "AI and telemedicine for chronic wound care",
+        "techStack": "AI, Telemedicine",
+        "track": "2nd Place",
+        "placement": "€15,000"
+      }
+    ],
+    "patterns": [
+      "Elder care solutions",
+      "Telemedicine",
+      "Germany-focused healthcare"
+    ]
+  },
+  {
+    "eventName": "Novartis Digital Gesundheitspreis 2024",
+    "dates": "June 2024",
+    "organizer": "Novartis Deutschland",
+    "location": "Berlin, Germany",
+    "prizePool": "€60,000",
+    "tracks": ["Digital Health"],
+    "sponsors": ["Novartis", "BARMER"],
+    "winners": [
+      {
+        "project": "Navel",
+        "description": "Social robot for nursing home resident engagement",
+        "techStack": "AI, robotics",
+        "track": "1st Place",
+        "placement": "€25,000"
+      },
+      {
+        "project": "Hermaid",
+        "description": "Digital platform for women's health support in workplace",
+        "techStack": "AI",
+        "track": "2nd Place",
+        "placement": "€15,000"
+      }
+    ],
+    "patterns": [
+      "Social robotics",
+      "Workplace health",
+      "Elder care robotics"
+    ]
+  },
+  {
+    "eventName": "Sandoz Healthcare Access Challenge (HACk)",
+    "dates": "March 2019",
+    "organizer": "Sandoz (Novartis division)",
+    "location": "Austin, Texas (SXSW)",
+    "prizePool": "€20,000 per winner (3 winners)",
+    "tracks": [
+      "Healthcare Access"
+    ],
+    "sponsors": ["Sandoz", "SXSW"],
+    "winners": [
+      {
+        "project": "Regulora",
+        "description": "Digital therapeutic for IBS based on gut-directed hypnotherapy",
+        "techStack": "Mobile app, digital therapy",
+        "track": "Healthcare Access",
+        "placement": "Winner"
+      },
+      {
+        "project": "SocialGenomics",
+        "description": "AI smart social network for rare disease patients",
+        "techStack": "AI, genomic data",
+        "track": "Healthcare Access",
+        "placement": "Winner"
+      },
+      {
+        "project": "Mobile Clinic",
+        "description": "Door-to-door maternal healthcare in Uganda",
+        "techStack": "Mobile app",
+        "track": "Healthcare Access",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "Global healthcare access",
+      "Digital therapeutics",
+      "Rare disease focus"
+    ]
+  },
+  {
+    "eventName": "Pfizer Digital Hackathon",
+    "dates": "September 13, 2024",
+    "organizer": "Pfizer",
+    "location": "New York, NY",
+    "prizePool": "Prizes for top 3 teams",
+    "tracks": [
+      "Health Equity",
+      "Maternal Health",
+      "Mental Health",
+      "Cancer Screening"
+    ],
+    "sponsors": ["Pfizer"],
+    "winners": [
+      {
+        "project": "Maternisense",
+        "description": "Wearable for maternal health with real-time data",
+        "techStack": "Wearable sensors",
+        "track": "Health Equity",
+        "placement": "1st Place"
+      },
+      {
+        "project": "CUCU",
+        "description": "Mental health app for public school students",
+        "techStack": "AI, mood classification",
+        "track": "Health Equity",
+        "placement": "2nd Place"
+      },
+      {
+        "project": "NataLink",
+        "description": "AI for postpartum depression screening",
+        "techStack": "AI",
+        "track": "Health Equity",
+        "placement": "3rd Place"
+      }
+    ],
+    "patterns": [
+      "Health equity focus",
+      "Youth mental health",
+      "Maternal/child health"
+    ]
+  },
+  {
+    "eventName": "Pfizer Healthcare Hub Call for Solutions",
+    "dates": "October 2023",
+    "organizer": "Pfizer Canada",
+    "location": "Canada",
+    "prizePool": "$1.4 million total investment",
+    "tracks": [
+      "Digital Health Innovation"
+    ],
+    "sponsors": ["Pfizer", "Communitech"],
+    "winners": [
+      {
+        "project": "CANImmunize",
+        "description": "Technology solution for immunization guidelines navigation",
+        "techStack": "Healthcare technology",
+        "track": "Winner",
+        "placement": "Winner"
+      },
+      {
+        "project": "PharmaGuide/PharmaVision",
+        "description": "AI-powered patient portal for drug coverage",
+        "techStack": "AI",
+        "track": "Winner",
+        "placement": "Winner"
+      },
+      {
+        "project": "Wave View Imaging",
+        "description": "Novel breast imaging device",
+        "techStack": "Medical device",
+        "track": "Winner",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "Investment-focused",
+      "Canadian healthcare innovation",
+      "Medical devices"
+    ]
+  },
+  {
+    "eventName": "UCL Computer Science Society FHIRworks Hackathon",
+    "dates": "October 2024",
+    "organizer": "UCL + Great Ormond Street Hospital + Roche",
+    "location": "London, UK",
+    "prizePool": "Office space + mentoring",
+    "tracks": [
+      "Wards of the Future",
+      "Generative AI",
+      "FHIR"
+    ],
+    "sponsors": ["Roche", "GOSH DRIVE"],
+    "winners": [
+      {
+        "project": "E-Go App",
+        "description": "Emergency response data app for first responders",
+        "techStack": "Mobile app",
+        "track": "1st Place",
+        "placement": "Winner"
+      },
+      {
+        "project": "WakeUp System",
+        "description": "Communication system for patients with disabilities",
+        "techStack": "Eye tracking, sound detection",
+        "track": "2nd Place",
+        "placement": "Winner"
+      },
+      {
+        "project": "OPTI-FHIR",
+        "description": "Musculoskeletal assessment with desk evaluations",
+        "techStack": "3D scanning, FHIR",
+        "track": "3rd Place",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "FHIR standard focus",
+      "NHS integration",
+      "Accessibility solutions"
+    ]
+  },
+  {
+    "eventName": "Bio Farma x MIT Hacking Medicine",
+    "dates": "August 24-27, 2023",
+    "organizer": "Bio Farma + MIT Hacking Medicine",
+    "location": "Bali, Indonesia",
+    "prizePool": "$10,000 Google Cloud + $6,000 cash",
+    "tracks": [
+      "Upstream",
+      "Downstream"
+    ],
+    "sponsors": ["Bio Farma", "Google Cloud"],
+    "winners": [
+      {
+        "project": "Colony.jpeg",
+        "description": "Upstream track winning solution",
+        "techStack": "Not specified",
+        "track": "Upstream",
+        "placement": "1st Place"
+      },
+      {
+        "project": "CEXME",
+        "description": "Downstream track winning solution",
+        "techStack": "Not specified",
+        "track": "Downstream",
+        "placement": "1st Place"
+      }
+    ],
+    "patterns": [
+      "Pharmaceutical supply chain",
+      "ASEAN focus",
+      "Global health"
+    ]
+  },
+  {
+    "eventName": "TAU MedTech Hackathon",
+    "dates": "January 2023",
+    "organizer": "Tel Aviv University",
+    "location": "Tel Aviv, Israel",
+    "prizePool": "MIT Hacking Medicine spot + accelerator package",
+    "tracks": [
+      "General Surgery",
+      "Women's Health",
+      "Plastic Surgery"
+    ],
+    "sponsors": ["MIT Hacking Medicine", "AION Labs"],
+    "winners": [
+      {
+        "project": "OReye",
+        "description": "Computer vision for operating room safety",
+        "techStack": "Computer vision",
+        "track": "General Surgery",
+        "placement": "1st Place"
+      },
+      {
+        "project": "Mommies'",
+        "description": "Community-based app for peripartum depression",
+        "techStack": "Mobile app, AI",
+        "track": "Women's Health",
+        "placement": "2nd Place"
+      }
+    ],
+    "patterns": [
+      "Surgical safety",
+      "Women's health",
+      "Medical device focus"
+    ]
+  },
+  {
+    "eventName": "LongHack (VitaDAO)",
+    "dates": "January 20-22, 2023",
+    "organizer": "VitaDAO",
+    "location": "Virtual",
+    "prizePool": "5,500 VITA + $3,500 USDC",
+    "tracks": [
+      "Longevity Science"
+    ],
+    "sponsors": ["VitaDAO"],
+    "winners": [
+      {
+        "project": "hack-age",
+        "description": "AI/ML solution for anti-AGE therapies",
+        "techStack": "AI/ML, in silico screening",
+        "track": "Longevity",
+        "placement": "1st Place"
+      }
+    ],
+    "patterns": [
+      "Longevity research",
+      "AI-driven drug discovery",
+      "Anti-aging"
+    ]
+  },
+  {
+    "eventName": "Siriraj x MIT Hacking Medicine",
+    "dates": "November 1-3, 2024",
+    "organizer": "Siriraj Hospital + MIT",
+    "location": "Bangkok, Thailand",
+    "prizePool": "40,000 Baht + $5,000 cloud credits",
+    "tracks": [
+      "Aging in Place",
+      "Geriatric Care"
+    ],
+    "sponsors": ["MIT", "Google Cloud"],
+    "winners": [
+      {
+        "project": "FallAIDE",
+        "description": "Smart glasses for fall detection in elderly",
+        "techStack": "Computer vision, smart glasses",
+        "track": "Aging in Place",
+        "placement": "Winner"
+      },
+      {
+        "project": "OITEP",
+        "description": "Salt consumption modification using scent technology",
+        "techStack": "Scent technology",
+        "track": "Geriatric Care",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "Elder care solutions",
+      "Aging in place",
+      "Developing country focus"
+    ]
+  },
+  {
+    "eventName": "HealthUnity Generative AI in Health Startup Challenge",
+    "dates": "October 2023",
+    "organizer": "HealthUnity",
+    "location": "Virtual",
+    "prizePool": "NVIDIA Grace Hopper system + prizes",
+    "tracks": [
+      "Generative AI in Health"
+    ],
+    "sponsors": ["NVIDIA", "Microsoft", "Accenture"],
+    "winners": [
+      {
+        "project": "Subtle Medical",
+        "description": "Overall winner - generative AI in healthcare",
+        "techStack": "Generative AI",
+        "track": "Overall",
+        "placement": "Winner"
+      },
+      {
+        "project": "Huma.AI",
+        "description": "Runner-up",
+        "techStack": "AI",
+        "track": "Runner-up",
+        "placement": "2nd Place"
+      }
+    ],
+    "patterns": [
+      "Generative AI focus",
+      "Healthcare automation",
+      "Start-up focus"
+    ]
+  },
+  {
+    "eventName": "Cleveland Clinic Innovation Challenge",
+    "dates": "December 2024",
+    "organizer": "Cleveland Clinic",
+    "location": "Cleveland, Ohio",
+    "prizePool": "$100,000",
+    "tracks": [
+      "Medical Innovation"
+    ],
+    "sponsors": ["Jones Day"],
+    "winners": [
+      {
+        "project": "Jeannette Messer - Antimicrobial Antibodies",
+        "description": "Antimicrobial antibody therapeutics for bacterial infections",
+        "techStack": "Biotechnology",
+        "track": "Innovation Challenge",
+        "placement": "$100,000"
+      }
+    ],
+    "patterns": [
+      "Medical device innovation",
+      "Antimicrobial solutions",
+      "Internal Cleveland Clinic innovators"
+    ]
+  },
+  {
+    "eventName": "Johnson & Johnson HealthBot Challenge",
+    "dates": "March 2024",
+    "organizer": "Johnson & Johnson + Fondazione Mondo Digitale",
+    "location": "Rome, Italy",
+    "prizePool": "Prizes for top teams",
+    "tracks": [
+      "Healthcare Robotics/AI"
+    ],
+    "sponsors": ["Johnson & Johnson"],
+    "winners": [
+      {
+        "project": "Pharmabot",
+        "description": "Robotic pill dispenser for therapeutic adherence",
+        "techStack": "Robotics",
+        "track": "HealthBot",
+        "placement": "1st Place"
+      }
+    ],
+    "patterns": [
+      "Therapeutic adherence",
+      "Student innovation",
+      "Healthcare robotics"
+    ]
+  },
+  {
+    "eventName": "Novartis Hack MS2 (Multiple Sclerosis)",
+    "dates": "May 2023",
+    "organizer": "Novartis",
+    "location": "Milan, Italy",
+    "prizePool": "Multiple prizes",
+    "tracks": [
+      "MS Monitoring Solutions"
+    ],
+    "sponsors": ["Novartis"],
+    "winners": [
+      {
+        "project": "smART RING",
+        "description": "Wearable ring with MS monitoring and art therapy",
+        "techStack": "Wearable sensors",
+        "track": "MS Monitoring",
+        "placement": "Winner"
+      },
+      {
+        "project": "eSteps",
+        "description": "Smart insole for MS motor monitoring",
+        "techStack": "IoT, sensors",
+        "track": "MS Monitoring",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "Chronic disease monitoring",
+      "Wearable technology",
+      "MS-specific solutions"
+    ]
+  },
+  {
+    "eventName": "National Academies STI Hackathon",
+    "dates": "September-October 2023",
+    "organizer": "National Academies of Sciences, Engineering, and Medicine",
+    "location": "Virtual",
+    "prizePool": "$24K awarded to 5 teams",
+    "tracks": [
+      "STI Prevention Technology"
+    ],
+    "sponsors": [],
+    "winners": [
+      {
+        "project": "StatusQuo",
+        "description": "Comprehensive STI prevention and testing platform",
+        "techStack": "Mobile app, QR verification",
+        "track": "1st Place",
+        "placement": "Winner"
+      },
+      {
+        "project": "SHARE",
+        "description": "HIV risk profiling and testing recommendation tool",
+        "techStack": "Flutter, AI risk modeling",
+        "track": "2nd Place",
+        "placement": "Winner"
+      },
+      {
+        "project": "Metacare.AI",
+        "description": "ChatGPT patient education assistant for STI topics",
+        "techStack": "ChatGPT, BioBERT AI",
+        "track": "3rd Place",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "Public health focus",
+      "Sexual health",
+      "AI-powered education"
+    ]
+  },
+  {
+    "eventName": "NEOvations Bench to Bedside",
+    "dates": "September 21, 2023",
+    "organizer": "NEOMED",
+    "location": "Ohio",
+    "prizePool": "$10,000 first place",
+    "tracks": [
+      "Medical Technology"
+    ],
+    "sponsors": [],
+    "winners": [
+      {
+        "project": "GaMH Hydrogel",
+        "description": "Drug delivery system for resorptive disorders",
+        "techStack": "Hydrogel, drug delivery",
+        "track": "1st Place",
+        "placement": "$10,000"
+      },
+      {
+        "project": "Pelorus Health",
+        "description": "Pediatric diabetes management system",
+        "techStack": "Health technology",
+        "track": "2nd Place",
+        "placement": "$5,000"
+      }
+    ],
+    "patterns": [
+      "Student innovation",
+      "Drug delivery",
+      "Pediatric focus"
+    ]
+  },
+  {
+    "eventName": "HackMIT Health Track",
+    "dates": "September 16-17, 2023",
+    "organizer": "MIT",
+    "location": "Cambridge, MA",
+    "prizePool": "Track prizes within $10,000 total",
+    "tracks": [
+      "Health & Accessibility"
+    ],
+    "sponsors": [],
+    "winners": [
+      {
+        "project": "CardioSense",
+        "description": "Locally-inferenced AI cardiac triage system",
+        "techStack": "Llama 3.2, Raspberry Pi, ChromaDB, RAG",
+        "track": "Health & Accessibility",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "Edge AI / local inference",
+      "Multi-signal vital analysis",
+      "Hardware integration"
+    ]
+  },
+  {
+    "eventName": "TechCrunch Startup Battlefield",
+    "dates": "September 2023",
+    "organizer": "TechCrunch",
+    "location": "San Francisco, CA",
+    "prizePool": "$100,000",
+    "tracks": [
+      "HealthTech"
+    ],
+    "sponsors": ["TechCrunch"],
+    "winners": [
+      {
+        "project": "BioticsAI",
+        "description": "AI platform for fetal malformation detection on ultrasound",
+        "techStack": "AI, ultrasound integration",
+        "track": "HealthTech",
+        "placement": "$100,000 Winner"
+      }
+    ],
+    "patterns": [
+      "AI diagnostics",
+      "Ultrasound AI",
+      "Reproductive health"
+    ]
+  },
+  {
+    "eventName": "HITLAB Breakthrough Alliance Challenge",
+    "dates": "November 2023",
+    "organizer": "HITLAB",
+    "location": "New York, NY",
+    "prizePool": "Pilot study support + publication",
+    "tracks": [
+      "Digital Health"
+    ],
+    "sponsors": ["NYCEDC"],
+    "winners": [
+      {
+        "project": "Soliddd",
+        "description": "Low-vision aid for macular degeneration",
+        "techStack": "Optical technology",
+        "track": "1st Place",
+        "placement": "Winner"
+      },
+      {
+        "project": "BUDDI AI",
+        "description": "Generative AI for healthcare coding and billing",
+        "techStack": "Generative AI, EMR integration",
+        "track": "2nd Place",
+        "placement": "Winner"
+      }
+    ],
+    "patterns": [
+      "Digital health evidence generation",
+      "Pilot studies",
+      "NYC focus"
+    ]
+  }
+]

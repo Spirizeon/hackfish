@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+venv/
+env/
+.env
+.env.local
+
+# Build outputs
+dist/
+build/
+*.pyc
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Generated winning projects (can be regenerated)
+/WINNING_PROJECT_*.md
+!/WINNING_PROJECT_AI.md
+
+# Secrets
+*.pem
+*.key
+credentials.json

@@ -1,0 +1,564 @@
+[
+  {
+    "eventName": "Microsoft Imagine Cup",
+    "date": "Annual (since 2003)",
+    "organizer": "Microsoft",
+    "prizePool": "USD 100,000 for World Champion + Azure credits",
+    "tracksSponsors": ["AI", "Earth", "Education", "Health", "Lifestyle"],
+    "winners": [
+      {
+        "year": 2024,
+        "project": "FROM YOUR EYES",
+        "description": "Mobile app with AI that provides real-time visual descriptions for users with vision disabilities, using custom AI model with 98.03% accuracy",
+        "team": "Zülal Tannur",
+        "techStack": ["Azure Cosmos DB", "Azure Blob Storage", "GPT-4", "Custom AI Model"]
+      },
+      {
+        "year": 2023,
+        "project": "Scraft",
+        "description": "AI writing tutor providing personalized feedback and suggestions for students",
+        "team": "United States",
+        "techStack": ["Azure ML", "AI"]
+      },
+      {
+        "year": 2023,
+        "project": "TAWI",
+        "description": "Real-time speech recognition solution for children with Auditory Processing Disorder",
+        "team": "Kenya",
+        "techStack": ["Azure AI", "Speech Recognition"]
+      }
+    ],
+    "keyPatterns": ["AI-powered solutions", "Accessibility focus", "Global impact", "Azure technology required"]
+  },
+  {
+    "eventName": "Microsoft AI Classroom Hackathon",
+    "date": "2024",
+    "organizer": "Microsoft",
+    "prizePool": "$12,000 USD",
+    "tracksSponsors": ["Azure AI", "Azure Databases", "Best Graduate", "Best Undergraduate", "No-Code"],
+    "winners": [
+      {
+        "project": "ChatEDU",
+        "description": "Personalized study guides, multiple-choice tests, and context-driven AI sessions",
+        "team": "First Place Technical",
+        "techStack": ["Azure AI", "Generative AI"]
+      },
+      {
+        "project": "Dialogues Through Time",
+        "description": "Educational history game with immersive storytelling and AI-driven dialogues",
+        "team": "Second Place",
+        "techStack": ["Azure AI", "Interactive Learning"]
+      },
+      {
+        "project": "Insight",
+        "description": "Transform lecture notes into personalized quizzes and flashcards",
+        "team": "Third Place",
+        "techStack": ["Azure AI", "Azure Databases"]
+      },
+      {
+        "project": "DevHub",
+        "description": "ML-based platform connecting students with AI mentorship and career paths",
+        "team": "Best Undergraduate",
+        "techStack": ["Machine Learning", "AI Mentorship"]
+      },
+      {
+        "project": "Cuepal",
+        "description": "AI flashcard generator transforming student notes into tailored quizzes using GPT-4",
+        "team": "Best Graduate",
+        "techStack": ["GPT-4", "OpenAI"]
+      }
+    ],
+    "keyPatterns": ["Azure-focused", "AI for education", "Global participation (100+ countries)", "Student innovators"]
+  },
+  {
+    "eventName": "Google for Developers Solution Challenge",
+    "date": "Annual",
+    "organizer": "Google Developer Student Clubs (GDSC)",
+    "prizePool": "Google products and funding",
+    "tracksSponsors": ["UN Sustainable Development Goals", "Google Technology"],
+    "winners": [
+      {
+        "year": 2024,
+        "project": "ATTI",
+        "description": "Mobile app with voice assistant helping individuals with mild dementia manage memory loss",
+        "team": "Pukyong National University, South Korea",
+        "techStack": ["Google Cloud", "Voice AI"]
+      },
+      {
+        "year": 2024,
+        "project": "Spoon Share",
+        "description": "App connecting donors with those in need to reduce food waste and hunger",
+        "team": "Deogiri Institute of Engineering, India",
+        "techStack": ["Google Technology"]
+      },
+      {
+        "year": 2024,
+        "project": "Alpha-Eye",
+        "description": "AI-powered mobile app for early detection of eye diseases in Sub-Saharan Africa",
+        "team": "Ladoke Akintola University, Nigeria",
+        "techStack": ["AI", "Mobile"]
+      },
+      {
+        "year": 2023,
+        "project": "Wonder Reader",
+        "description": "Braille reader tool for accessibility",
+        "team": "BINUS University International, Indonesia",
+        "techStack": ["Jetpack Compose", "Firebase", "Google Cloud Text to Speech"]
+      },
+      {
+        "year": 2023,
+        "project": "HeadHome",
+        "description": "Solution for tracking displaced persons",
+        "team": "Nanyang Technological University, Singapore",
+        "techStack": ["Google Technology"]
+      }
+    ],
+    "keyPatterns": ["SDG alignment", "Google tech stack", "Social impact", "6-month development cycle"]
+  },
+  {
+    "eventName": "DigiEduHack",
+    "date": "Annual (since 2019)",
+    "organizer": "European Commission",
+    "prizePool": "Mentorship and incubation program",
+    "tracksSponsors": ["Beginner", "Experienced", "Social Impact", "Disruptive Technology", "Emerging Tech"],
+    "winners": [
+      {
+        "year": 2024,
+        "project": "EduMind",
+        "description": "AI-powered platform helping educators craft interactive, personalized materials",
+        "team": "Tec Guadalajara, Mexico",
+        "techStack": ["AI", "Personalization"]
+      },
+      {
+        "year": 2024,
+        "project": "AIcademy",
+        "description": "Digital platform using AI to personalize learning plans for students",
+        "team": "IISS Salvatore Trinchese, Italy",
+        "techStack": ["AI", "Learning Plans"]
+      },
+      {
+        "year": 2024,
+        "project": "Signedge",
+        "description": "Interactive app teaching sign language and digital literacy through gamification",
+        "team": "Universidad Peruana de Ciencias Aplicadas, Peru",
+        "techStack": ["Gamification", "Accessibility"]
+      },
+      {
+        "year": 2024,
+        "project": "MyVision",
+        "description": "AI chatbot helping students choose university courses and personal development",
+        "team": "Universita di Trento, Italy",
+        "techStack": ["AI Chatbot", "Education"]
+      },
+      {
+        "year": 2023,
+        "project": "ADAPTATEC",
+        "description": "AI-powered platform supporting students with cognitive divergences (ADHD, autism)",
+        "team": "Tecnológico de Monterrey, Mexico",
+        "techStack": ["AI", "Adaptive Learning", "LLM"]
+      },
+      {
+        "year": 2023,
+        "project": "EdMap",
+        "description": "Learning ecosystem bridging education and career in IT industry",
+        "team": "Tallinn University, Estonia",
+        "techStack": ["IT Simulation", "Career Development"]
+      }
+    ],
+    "keyPatterns": ["Local-to-global structure", "51 local hackathons in 25 countries", "Public voting", "European Commission backing"]
+  },
+  {
+    "eventName": "MLH Education Hackathons",
+    "date": "Ongoing",
+    "organizer": "Major League Hacking (MLH)",
+    "prizePool": "Various sponsor prizes",
+    "tracksSponsors": ["Education Track", "Accessibility", "AI in Education"],
+    "winners": [
+      {
+        "project": "Stud.AI",
+        "description": "App transforming user notes into personalized practice tests using Cohere API",
+        "team": "DeltaHacks",
+        "techStack": ["React", "Redux", "TailwindCSS", "Node.js", "MongoDB", "Cohere API"]
+      },
+      {
+        "project": "Hackademics",
+        "description": "Tool converting PDFs, PowerPoints, and audio to Anki flashcards automatically",
+        "team": "MLH Hackathon",
+        "techStack": ["Python", "Flask", "Cohere LLM API"]
+      },
+      {
+        "project": "Firefly Adventures",
+        "description": "Educational game with AI-integrated storytelling and tutoring",
+        "team": "MLH Month Long",
+        "techStack": ["AI", "Educational Gaming"]
+      }
+    ],
+    "keyPatterns": ["24-hour format", "Student-focused", "No-code to advanced", "Diverse tech stacks"]
+  },
+  {
+    "eventName": "MHacks",
+    "date": "Annual",
+    "organizer": "University of Michigan",
+    "prizePool": "$10,000+ in prizes",
+    "tracksSponsors": ["General", "AI", "Hardware", "FinTech"],
+    "winners": [
+      {
+        "year": 2023,
+        "project": "DECO.ai",
+        "description": "AI-powered interior design assistant using neural networks for 3D room visualizations",
+        "team": "University of Michigan",
+        "techStack": ["AI", "Neural Networks", "3D Visualization"]
+      },
+      {
+        "project": "VSAT",
+        "description": "Practice SAT testing platform simulating actual test environment",
+        "team": "First-year Michigan Engineering",
+        "techStack": ["Web App"]
+      }
+    ],
+    "keyPatterns": ["Midwest's largest student hackathon", "500+ participants", "24-hour format", "Cross-disciplinary"]
+  },
+  {
+    "eventName": "Khan Academy Healthy Hackathon",
+    "date": "Annual (irregular)",
+    "organizer": "Khan Academy",
+    "prizePool": "Internal - no external prizes",
+    "tracksSponsors": ["EdTech", "Internal Tools", "Accessibility"],
+    "winners": [
+      {
+        "project": "Khanpedia",
+        "description": "Chrome browser plugin allowing Wikipedia links to show Khan Academy content",
+        "team": "Dylan Vassallo",
+        "techStack": ["Chrome Extension"]
+      },
+      {
+        "project": "Read-to-Me",
+        "description": "Web Speech API integration for reading early learner content aloud",
+        "team": "Khan Academy Fellow",
+        "techStack": ["Mozilla Web Speech API"]
+      },
+      {
+        "project": "Office Dashboard (KAshboard)",
+        "description": "Office dashboard showing company metrics and experiments",
+        "team": "Remote team",
+        "techStack": ["Web Dashboard"]
+      }
+    ],
+    "keyPatterns": ["24-hour format", "No sleepovers (healthy)", "Open source contributions", "Company-wide participation"]
+  },
+  {
+    "eventName": "Duolingo Hackathon",
+    "date": "Quarterly since 2013",
+    "organizer": "Duolingo",
+    "prizePool": "Internal product features",
+    "tracksSponsors": ["Language Learning", "AI/ML", "Accessibility"],
+    "winners": [
+      {
+        "project": "Duolingo English Test",
+        "description": "AI-powered English proficiency exam using probabilistic grading and adaptive testing",
+        "team": "Burr Settles (originated from hackathon)",
+        "techStack": ["AI", "ML", "Adaptive Testing"]
+      },
+      {
+        "project": "DuoRadio Scaling",
+        "description": "Automated content generation for podcast-style language learning using GenAI",
+        "team": "2024 Hackathon Team",
+        "techStack": ["Generative AI", "Workflow Builder"]
+      },
+      {
+        "project": "Head-to-Head Races",
+        "description": "Real-time competitive language challenges between friends",
+        "team": "2013 Inaugural Hackathon",
+        "techStack": ["Gamification", "Real-time"]
+      }
+    ],
+    "keyPatterns": ["27-hour format", "Quarterly event", "Any employee can participate", "Product shipping track record"]
+  },
+  {
+    "eventName": "Coursera Make-a-thon",
+    "date": "Quarterly since 2012",
+    "organizer": "Coursera",
+    "prizePool": "Best in Show + value-based awards",
+    "tracksSponsors": ["Product Improvement", "Learner Experience", "Social Impact"],
+    "winners": [
+      {
+        "project": "Interactive Transcript",
+        "description": "Interactive transcript below every lecture on Coursera",
+        "team": "4th Make-a-thon",
+        "techStack": ["Frontend", "Learning Platform"]
+      },
+      {
+        "project": "Coursera for Refugees",
+        "description": "Free education access program for refugees worldwide",
+        "team": "5th Make-a-thon",
+        "techStack": ["Accessibility", "Partnership Integration"]
+      },
+      {
+        "project": "Share Your Certs",
+        "description": "Easier certificate display and sharing functionality",
+        "team": "10th Make-a-thon",
+        "techStack": ["Platform Feature"]
+      }
+    ],
+    "keyPatterns": ["Week-long event", "Company-wide participation", "Non-technical included", "Product-driven outcomes"]
+  },
+  {
+    "eventName": "Open edX Hackathon",
+    "date": "Various",
+    "organizer": "edX / Open edX Community",
+    "prizePool": "Badges and merchandise",
+    "tracksSponsors": ["Documentation", "Mobile", "XBlocks", "Analytics", "Video"],
+    "winners": [
+      {
+        "project": "Open edX Prize - Technical",
+        "description": "LabXchange platform for personalized science education",
+        "team": "Harvard University + OpenCraft",
+        "techStack": ["Open edX", "Personalization"]
+      },
+      {
+        "project": "Open edX Prize - Instructional Design",
+        "description": "Les Copros Vertes - environmental education platform",
+        "team": "MOOCit, France",
+        "techStack": ["Open edX", "Instructional Design"]
+      }
+    ],
+    "keyPatterns": ["Community-driven", "Open source focus", "48-hour format", "Global participation"]
+  },
+  {
+    "eventName": "EducateHacks",
+    "date": "Annual",
+    "organizer": "Education-focused hackathon",
+    "prizePool": "$10,000+",
+    "tracksSponsors": ["EdTech", "Accessibility", "Student Tools"],
+    "winners": [
+      {
+        "year": 2024,
+        "project": "First Place",
+        "description": "Education technology solution",
+        "team": "Winning Team",
+        "techStack": ["Various"]
+      },
+      {
+        "year": 2023,
+        "project": "ProtectEd",
+        "description": "AI for streamlining communication between teachers, students, and authorities",
+        "team": "EducateHacks 2023",
+        "techStack": ["AI", "Communication Platform"]
+      }
+    ],
+    "keyPatterns": ["Public good focus", "Education technology", "Student-led", "107+ participants"]
+  },
+  {
+    "eventName": "Smart India Hackathon",
+    "date": "Annual",
+    "organizer": "Ministry of Education, India",
+    "prizePool": "Rs 100,000+ cash prizes",
+    "tracksSponsors": ["Various ministry themes", "Smart Solutions"],
+    "winners": [
+      {
+        "year": 2023,
+        "project": "Construction Waste Solution",
+        "description": "Bricks and paver blocks from C&D waste and plastic bags",
+        "team": "Sona College of Technology, Salem",
+        "techStack": ["Sustainable Materials", "Innovation"]
+      }
+    ],
+    "keyPatterns": ["Government-organized", "National competition", "5-day continuous coding", "3-time consecutive winner"]
+  },
+  {
+    "eventName": "FIRST LEGO League",
+    "date": "Annual (international)",
+    "organizer": "FIRST (For Inspiration and Recognition of Science and Technology)",
+    "prizePool": "Various (robot kits, trophies, international travel)",
+    "tracksSponsors": ["Robot Design", "Innovation Project", "Core Values", "Robot Game"],
+    "winners": [
+      {
+        "year": 2025,
+        "project": "Quantum Bits",
+        "description": "Grand Champions Trophy - robotics excellence across all categories",
+        "team": "Bucharest International Informatics High School, Romania",
+        "techStack": ["LEGO Robotics", "Coding", "STEM"]
+      },
+      {
+        "year": 2025,
+        "project": "Keresztúri Ninjagók",
+        "description": "First place in category at world final in Hong Kong",
+        "team": "Bodrogkeresztúr, Hungary",
+        "techStack": ["LEGO", "Robotics"]
+      },
+      {
+        "year": 2024,
+        "project": "SUBMERGED Theme",
+        "description": "Underwater challenges - marine conservation, deep-sea exploration",
+        "team": "International",
+        "techStack": ["LEGO SPIKE Prime", "Autonomous Robots"]
+      }
+    ],
+    "keyPatterns": ["6,000+ teams globally", "Ages 9-16", "Hands-on STEM", "Real-world problem solving"]
+  },
+  {
+    "eventName": "Samsung Solve for Tomorrow",
+    "date": "Annual",
+    "organizer": "Samsung",
+    "prizePool": "Up to $37,000 in prizes",
+    "tracksSponsors": ["Environmental Sustainability", "Health/Sports", "Inclusive Society", "Learning/Education", "Digital Future"],
+    "winners": [
+      {
+        "year": 2024,
+        "project": "SilentGuide",
+        "description": "Smart glasses transcribing spoken words for hearing impairment",
+        "team": "Anglo-Chinese School (Independent), Singapore",
+        "techStack": ["Speech Recognition", "Smart Glasses"]
+      },
+      {
+        "project": "Calm Haven",
+        "description": "Smartwatch app for preteens with autism - communication, emotions, diet",
+        "team": "Cedar Girls' Secondary School, Singapore",
+        "techStack": ["Mobile App", "Smartwatch"]
+      }
+    ],
+    "keyPatterns": ["Secondary school students", "Social impact focus", "10 finalist teams", "75 entries from 240+ students"]
+  },
+  {
+    "eventName": "JUMP into STEM",
+    "date": "Annual",
+    "organizer": "Oak Ridge National Laboratory / Department of Energy",
+    "prizePool": "Paid summer internships at national labs",
+    "tracksSponsors": ["Energy", "Climate Change", "Sustainability", "Building Science"],
+    "winners": [
+      {
+        "year": 2024,
+        "project": "Detecting, Contracting, Sealing (DCS)",
+        "description": "Community envelope solution for low-income housing energy efficiency",
+        "team": "University of Nebraska-Lincoln",
+        "techStack": ["Building Science", "Energy Efficiency"]
+      },
+      {
+        "project": "Building-Integrated Algae Photobioreactor",
+        "description": "Carbon sequestration using algae systems",
+        "team": "UNC Charlotte",
+        "techStack": ["Biotechnology", "Carbon Capture"]
+      }
+    ],
+    "keyPatterns": ["College students", "National lab internships", "Building science focus", "Sustainability"]
+  },
+  {
+    "eventName": "HackaKhan",
+    "date": "Annual since 2023",
+    "organizer": "Khan Lab School",
+    "prizePool": "Various",
+    "tracksSponsors": ["EdTech", "Ages 13-18"],
+    "winners": [
+      {
+        "year": 2024,
+        "project": "EdTech Projects",
+        "description": "Student-built education technology solutions",
+        "team": "Ages 13-18 participants",
+        "techStack": ["Various"]
+      }
+    ],
+    "keyPatterns": ["Teen-focused", "EdTech theme", "Khan Lab School students", "Annual event"]
+  },
+  {
+    "eventName": "Jacobs Teen Innovation Challenge",
+    "date": "Annual",
+    "organizer": "Jacobs Institute for Innovation in Education, University of San Diego",
+    "prizePool": "Various",
+    "tracksSponsors": ["UN Global Goals", "Social Good"],
+    "winners": [
+      {
+        "year": 2023,
+        "project": "FIREfly Health",
+        "description": "First place - health innovation solution",
+        "team": "Teen Innovation Team",
+        "techStack": ["Innovation"]
+      },
+      {
+        "project": "The Siren Project",
+        "description": "Second place",
+        "team": "Teen Innovation Team",
+        "techStack": ["Innovation"]
+      }
+    ],
+    "keyPatterns": ["Worldwide event", "Teen innovators", "Social good", "UN SDG alignment"]
+  },
+  {
+    "eventName": "nexHack Edtech",
+    "date": "Annual",
+    "organizer": "Swissnex India and Boston",
+    "prizePool": "CHF 1000 vouchers for Swiss university courses",
+    "tracksSponsors": ["International Education", "GLocal Challenges"],
+    "winners": [
+      {
+        "project": "MySwissBot",
+        "description": "AI solution for international education",
+        "team": "GLocal EduHackers - 1st Place",
+        "techStack": ["AI", "Education"]
+      },
+      {
+        "project": "Shuffle",
+        "description": "App for intercultural exchanges between local and international students",
+        "team": "Hack4E+ - 2nd Place",
+        "techStack": ["Mobile", "Intercultural"]
+      },
+      {
+        "project": "LernEd",
+        "description": "Open platform connecting high school and university students for real-world problems",
+        "team": "LernEd - 3rd Place",
+        "techStack": ["Open Platform", "Collaboration"]
+      }
+    ],
+    "keyPatterns": ["48-hour global hackathon", "130 hackers from 45 nationalities", "Swiss university partnerships", "Design thinking"]
+  },
+  {
+    "eventName": "OpenEd.ai AI for Education HackWeek",
+    "date": "2017",
+    "organizer": "OpenEd.ai",
+    "prizePool": "$19,000 in prizes",
+    "tracksSponsors": ["AI in Education", "Machine Learning", "NLP"],
+    "winners": [
+      {
+        "project": "ReadEx",
+        "description": "AI reading assistance tool",
+        "team": "IIT Delhi - Grand Prize $6,000",
+        "techStack": ["AI", "NLP"]
+      },
+      {
+        "project": "GradeGuardian",
+        "description": "Predictive models and visualizations for student performance",
+        "team": "Purdue University - $3,000 Second Place",
+        "techStack": ["Predictive Modeling", "Dashboard"]
+      },
+      {
+        "project": "StyLing",
+        "description": "Writing style improvement for Hindi language learners",
+        "team": "Oxford University - $5,000 Third Place",
+        "techStack": ["NLP", "Hindi Language"]
+      },
+      {
+        "project": "SAT Buddy",
+        "description": "FB Messenger bot for SAT preparation",
+        "team": "UC Berkeley, CMU - $3,000 Fourth Place",
+        "techStack": ["Chatbot", "Education"]
+      }
+    ],
+    "keyPatterns": ["1,400 registered participants", "80 project submissions", "Global participation (3 continents)", "Academic focus (Harvard, Stanford judges)"]
+  },
+  {
+    "eventName": "HackMIT Education Track",
+    "date": "Annual",
+    "organizer": "MIT",
+    "prizePool": "Various prizes + mentorship",
+    "tracksSponsors": ["Education", "Social Impact", "General"],
+    "winners": [
+      {
+        "year": 2022,
+        "project": "GreyDuck",
+        "description": "AI code review tool suggesting and explaining code revisions using LLMs like GPT-3 and Codex",
+        "team": "HackMIT 2022",
+        "techStack": ["LLM", "GPT-3", "Codex", "VS Code Extension"]
+      }
+    ],
+    "keyPatterns": ["MIT-hosted", "24-hour format", "Education track focus", "Code assistance tools"]
+  }
+]
