@@ -29,6 +29,15 @@ Built on insights from 260+ real hackathons. Runs a 6-tick simulation that gener
 
 ---
 
+## Files
+
+```
+├── README.md    # This file
+├── SKILLS.md    # Skill definition
+├── AGENTS.md    # Agent prompts (participant, mentor, judge)
+└── WARP.md      # Wrap-specific integration
+```
+
 ## Integrate
 
 ```bash
