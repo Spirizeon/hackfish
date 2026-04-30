@@ -37,8 +37,17 @@ git clone https://github.com/yourusername/hackfish.git
 
 # Use
 - Copy src/SKILLS.md into your agent's skill registry
-- Load AGENTS.md prompts into your agent framework
+- Use src/AGENTS.md prompts for participant, mentor, judge agents
 - Run: /hackathon <theme>
+```
+
+**Source files:**
+```
+src/
+├── SKILLS.md    # Skill definition
+├── AGENTS.md    # Agent prompts (18KB)
+├── TEAMS.md     # Team roles
+└── WIKI-README.md
 ```
 
 ---
