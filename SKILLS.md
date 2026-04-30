@@ -9,28 +9,56 @@ An AI agent skill that runs hackathon simulations to predict winners.
 ## When to Use
 
 Use this skill when the user says:
-- `/hackathon <theme>` or `/simulate <theme>`
-- "run a hackathon simulation for <theme>"
-- "predict who will win the <theme> hackathon"
-- "simulate a <theme> hackathon"
+- "run a hackathon simulation"
+- "predict who will win my hackathon"
+- "simulate my hackathon"
+- "/hackathon"
+
+---
+
+## Step 1: Ask User for Hackathon Details
+
+Before running the simulation, gather:
+
+| Question | Purpose |
+|----------|---------|
+| **Theme?** | The hackathon track/track (AI, Healthcare, Web3, etc.) |
+| **Participant count?** | Default: 1000 |
+| **Duration?** | 24h or 48h |
+| **Sponsors?** | Which companies are sponsoring |
+| **Special focus?** | Any specific requirements |
+
+**Example prompt:**
+```
+I'll simulate your hackathon. First, tell me:
+1. What's the theme/track?
+2. How many participants? (default 1000)
+3. Is it 24h or 48h?
+4. Who are the sponsors?
+5. Any special focus? (accessibility, AI, etc.)
+```
+
+---
+
+## Step 2: Run Simulation with 1000 Participants
+
+After details collected, run the **6-tick simulation**:
+
+| Tick | Phase | What Happens |
+|------|-------|-------------|
+| 1 | **Idea Dump** | 1000 participants broadcast project ideas (clustered) |
+| 2 | **Team Formation** | ~150-200 teams form around idea clusters |
+| 3 | **Mentorship** | Mentors filter to top 30 teams, give feedback |
+| 4 | **Refinement** | Top 30 iterate, judges probe |
+| 5 | **Pitch Prep** | Top 15 finalize pitches |
+| 6 | **Deliberation** | Judges score top 15, select winners |
 
 ---
 
 ## How It Works
 
-Hackfish runs a **6-tick simulation** that mirrors a real hackathon:
-
-| Tick | Phase | What Happens |
-|------|-------|-------------|
-| 1 | **Idea Dump** | Participants broadcast project ideas |
-| 2 | **Team Formation** | Participants form teams around compatible ideas |
-| 3 | **Mentorship** | Mentors give feedback, push for sponsor integration |
-| 4 | **Refinement** | Teams iterate, judges ask probing questions |
-| 5 | **Pitch Prep** | Teams finalize pitches with mentor polish |
-| 6 | **Deliberation** | Judges score and select winners |
-
 The simulation uses agent prompts (see `AGENTS.md`) to generate realistic:
-- Participant behavior (idea generation, team formation)
+- Participant behavior (idea generation, team formation) - **scaled to 1000**
 - Mentor feedback (pushing for novelty, feasibility, sponsor integration)
 - Judge evaluation (scoring, deliberation)
 
@@ -73,7 +101,7 @@ Final Score = Novelty(25) + Feasibility(25) + Impact(25) + Differentiation(20) +
 ## Output Format
 
 ```
-## Hackathon: <theme>
+## Hackathon: <theme> (<participants> participants, <duration>)
 
 ### Predicted Winner
 **Project Name** — <one-line hook>
@@ -85,10 +113,12 @@ Final Score = Novelty(25) + Feasibility(25) + Impact(25) + Differentiation(20) +
 2. Project B - <hook> (score)
 3. Project C - <hook> (score)
 
-### Simulation Notes
-- Teams formed: X
-- Mentor feedback themes: <themes>
-- Judge criteria emphasized: <criteria>
+### Simulation Details
+- Participants: <N>
+- Teams formed: <N>
+- Filtered to top: <N>
+- Finalists: <N>
+- Sponsor emphasis: <sponsors>
 ```
 
 ---
@@ -96,39 +126,44 @@ Final Score = Novelty(25) + Feasibility(25) + Impact(25) + Differentiation(20) +
 ## Example Usage
 
 ```
-User: /hackathon ai
+User: I want to simulate my hackathon
 
-Agent runs simulation:
+Agent: I'll simulate your hackathon. First, tell me:
+1. What's the theme/track?
+2. How many participants? (default 1000)
+3. Is it 24h or 48h?
+4. Who are the sponsors?
+5. Any special focus?
 
-Tick 1: 8 participants broadcast ideas
-  - CodeReview AI, LocalAI, AccessiBot, NoCode AI, EdgeIoT...
+User: It's an AI hackathon, 1000 participants, 48h, sponsors are Google, Microsoft, OpenAI
 
-Tick 2: Teams form
-  - Team Alpha (4): CodeReview AI
-  - Team Beta (3): NoCode AI
-  - Team Gamma (2): AccessiBot
+Agent: Running simulation...
 
-Tick 3: Mentors give feedback
-  - Push sponsor API integration
-  - NoCode AI: "Strong real-world impact pattern"
-  - AccessiBot: "Clear user need, auto-fix differentiation"
+Tick 1: 1000 participants broadcast ideas (clustered by pattern)
+  - AI Agents: 320 participants
+  - Generative AI: 250 participants
+  - Edge AI / Privacy: 180 participants
+  - AI for Social Good: 150 participants
+  - Domain-Specific AI: 100 participants
 
-Tick 4: Refinement + judge questions
-  - All teams pivot toward production-ready
-  - Judges probe sponsor integration
+Tick 2: Teams form (~150 teams)
+  - Team Alpha: AI Agents cluster
+  - Team Beta: Generative AI cluster
+  - ... (clusters become teams)
 
-Tick 5: Pitch prep
-  - NoCode AI: Non-developer focus, 2 sponsor APIs
-  - AccessiBot: Auto-fix, accessibility
-  - CodeReview AI: Security domain
+Tick 3: Mentors filter to top 30
+  - Push sponsor integration (Google, Microsoft, OpenAI)
+  - Focus: production-ready, real-world impact
 
-Tick 6: Deliberation
-  - NoCode AI: 25/100 (wins)
-  - AccessiBot: 22/100
-  - CodeReview AI: 21/100
+Tick 4: Top 30 refine + judge questions
+  - Judges probe: differentiation, feasibility, sponsor APIs
+
+Tick 5: Top 15 pitch prep
+
+Tick 6: Deliberation & scoring
 
 Output:
-## Hackathon: AI
+## Hackathon: AI (1000 participants, 48h)
 
 ### Predicted Winner
 **NoCode AI** — AI workflow builder for non-developers
@@ -139,6 +174,12 @@ Output:
 1. NoCode AI (25)
 2. AccessiBot (22)
 3. CodeReview AI (21)
+
+### Simulation Details
+- 150 teams formed from 1000 participants
+- Top 30 filtered by mentors
+- Top 15 reached final round
+- All top 3 used 2+ sponsor APIs
 ```
 
 ---
@@ -172,7 +213,6 @@ The `data/` and `hackathon-wiki/` directories contain research used to **build**
 |------|---------|
 | `SKILLS.md` | This skill definition |
 | `AGENTS.md` | Agent prompt templates (participant, mentor, judge) |
-| `TEAMS.md` | Team role definitions |
 
 ---
 
