@@ -34,3 +34,7 @@ logs/
 *.pem
 *.key
 credentials.json
+
+# Hackfish runtime outputs
+memories/
+build_guides/
