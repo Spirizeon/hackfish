@@ -9,34 +9,57 @@ An AI agent skill that runs hackathon simulations to predict winners.
 ## When to Use
 
 Use this skill when the user says:
+- "use the skills in this repo to do a hackathon sim of https://..."
 - "run a hackathon simulation"
 - "predict who will win my hackathon"
-- "simulate my hackathon"
-- "/hackathon"
+- "simulate this hackathon: <URL>"
 
 ---
 
-## Step 1: Ask User for Hackathon Details
+## Step 0: Scrape Hackathon URL
 
-Before running the simulation, gather:
+When user provides a URL (e.g., `https://ethglobal.com/events/paris`):
+
+1. **Fetch the hackathon page**
+2. **Extract the following:**
+   | Field | Where to Find |
+   |-------|---------------|
+   | Theme/Tracks | Hero section, about page |
+   | Sponsors | Sponsors section, footer |
+   | Duration | Rules, schedule |
+   | Participant count | Stats, past events |
+   | Prizes | Prizes section |
+   | Location | Header, about |
+
+3. **If missing info**, ask user for details
+
+**Example:**
+```
+User: use the skills in this repo to do a hackathon sim of https://ethglobal.com/events/paris
+
+Agent: Scraping https://ethglobal.com/events/paris...
+  ✓ Theme: Web3/Blockchain
+  ✓ Sponsors: Stackup, Alchemy, Circle, Polygon, Coinbase
+  ✓ Tracks: DeFi, Infrastructure, Consumer
+  ✓ Duration: 48h
+  ✓ Participants: ~1000 (default)
+  
+  Running simulation...
+```
+
+---
+
+## Step 1: Ask User for Missing Details (if any)
+
+If URL doesn't provide all details, ask:
 
 | Question | Purpose |
 |----------|---------|
-| **Theme?** | The hackathon track/track (AI, Healthcare, Web3, etc.) |
+| **Theme?** | The hackathon track (AI, Healthcare, Web3, etc.) |
 | **Participant count?** | Default: 1000 |
 | **Duration?** | 24h or 48h |
 | **Sponsors?** | Which companies are sponsoring |
 | **Special focus?** | Any specific requirements |
-
-**Example prompt:**
-```
-I'll simulate your hackathon. First, tell me:
-1. What's the theme/track?
-2. How many participants? (default 1000)
-3. Is it 24h or 48h?
-4. Who are the sponsors?
-5. Any special focus? (accessibility, AI, etc.)
-```
 
 ---
 
@@ -96,7 +119,45 @@ memories/
 
 ---
 
-## Step 4: Live Pitching Rounds with Q&A
+## Step 4: Generate Build Guide
+
+After tick 8 (deliberation), generate a complete build guide for the winner:
+
+### What to Generate
+
+| Section | Contents |
+|---------|----------|
+| **Tech Stack** | Exact technologies, versions, frameworks |
+| **Sponsor APIs** | Which sponsor APIs to use, how to integrate |
+| **48h Schedule** | Hour-by-hour build plan |
+| **Code Snippets** | Key implementations to copy-paste |
+| **Pitch Deck** | 30-sec, 2-min, 5-min versions |
+| **Q&A Prep** | Expected judge questions + answers |
+
+### Schedule Template
+
+```
+Hour 1-4:  Project setup, folder structure, repo init
+Hour 5-8:  Core feature #1 (MVP)
+Hour 9-12: Core feature #2
+Hour 13-16: Sponsor API integration #1
+Hour 17-20: Sponsor API integration #2 + data pipeline
+Hour 21-28: Frontend/UI implementation
+Hour 29-36: Demo preparation, testing
+Hour 37-44: Polish, bug fixes, Q&A prep
+Hour 45-48: Final pitch prep, backup, submit
+```
+
+### Output Location
+```
+build_guides/
+└── hackathon_<theme>_<date>/
+    └── winner_build_guide.md
+```
+
+---
+
+## Step 5: Live Pitching Rounds with Q&A
 
 **Tick 5: Live Pitches (50 teams)**
 ```
@@ -184,6 +245,31 @@ Final Score = Novelty(25) + Feasibility(25) + Impact(25) + Differentiation(20) +
 1. Project A - <hook> (score)
 2. Project B - <hook> (score)
 3. Project C - <hook> (score)
+
+### Build Guide (How to Build the Winner)
+**Tech Stack:** <technologies to use>
+**Sponsor APIs:** <APIs to integrate>
+
+**Hour-by-hour Schedule (48h):**
+- Hour 1-4: Project setup + core API + folder structure
+- Hour 5-12: Main feature implementation
+- Hour 13-20: Sponsor API integrations + data pipelines
+- Hour 21-36: UI/UX + demo preparation
+- Hour 37-44: Polish + test + Q&A prep
+- Hour 45-48: Final pitch prep + backup
+
+**Code Snippets:** Key implementations to copy
+
+### Pitch Deck
+- **30-sec:** <one-line hook + demo>
+- **2-min:** <problem, solution, demo>
+- **5-min:** <full pitch with business case>
+
+### Judge Q&A Prep
+Expected questions + answers:
+- "What's the differentiation?" → <answer>
+- "How will you use sponsor APIs?" → <answer>
+- "What's the real-world impact?" → <answer>
 
 ### Simulation Details
 - Participants: <N>
