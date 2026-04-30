@@ -145,20 +145,25 @@ The predictor uses data from:
 
 ```
 hackfish/
-├── README.md                      # This file
-├── SKILLS.md                      # Skill definition
-├── AGENTS.md                      # Agent prompt templates
-├── TEAMS.md                       # Team structure
-├── WIKI-META.json                 # Wiki metadata
-├── WINNING_PROJECT_*.md            # Generated winning guides
-├── hackathon-*.json               # Research data by domain
-└── hackathon-wiki/                # Full knowledge base
-    ├── hackathons/               # Individual event records
-    │   ├── ethglobal/
-    │   ├── devfolio/
-    │   ├── healthcare/
-    │   └── ...
-    └── patterns/                 # Winning patterns analysis
+├── src/                          # Documentation
+│   ├── README.md                  # Main usage guide
+│   ├── SKILLS.md                 # Skill definition
+│   ├── AGENTS.md                 # Agent prompt templates
+│   ├── TEAMS.md                  # Team structure
+│   └── WIKI-README.md            # Knowledge base overview
+├── data/                         # Research data (260+ hackathons)
+│   ├── WIKI-META.json            # Wiki metadata
+│   ├── ai_hackathons_research.json
+│   ├── healthcare_hackathons_winning_projects.json
+│   └── ...
+├── examples/                     # Generated winning guides
+│   └── WINNING_PROJECT_AI.md
+└── hackathon-wiki/               # Full knowledge base
+    └── hackathons/               # Individual event records
+        ├── ai-ml/
+        ├── healthcare/
+        ├── fintech/
+        └── ...
 ```
 
 ---

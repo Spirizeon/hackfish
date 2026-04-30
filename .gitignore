@@ -30,10 +30,6 @@ logs/
 *.temp
 *.bak
 
-# Generated winning projects (can be regenerated)
-/WINNING_PROJECT_*.md
-!/WINNING_PROJECT_AI.md
-
 # Secrets
 *.pem
 *.key
