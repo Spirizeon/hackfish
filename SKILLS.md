@@ -42,16 +42,88 @@ I'll simulate your hackathon. First, tell me:
 
 ## Step 2: Run Simulation with 1000 Participants
 
-After details collected, run the **6-tick simulation**:
+After details collected, run the **8-tick simulation**:
 
 | Tick | Phase | What Happens |
 |------|-------|-------------|
 | 1 | **Idea Dump** | 1000 participants broadcast project ideas (clustered) |
 | 2 | **Team Formation** | ~150-200 teams form around idea clusters |
-| 3 | **Mentorship** | Mentors filter to top 30 teams, give feedback |
-| 4 | **Refinement** | Top 30 iterate, judges probe |
-| 5 | **Pitch Prep** | Top 15 finalize pitches |
-| 6 | **Deliberation** | Judges score top 15, select winners |
+| 3 | **Mentorship** | Mentors filter to top 50 teams, give feedback |
+| 4 | **Refinement** | Top 50 iterate based on mentor feedback |
+| 5 | **Live Pitches + Q&A** | All 50 teams pitch (30 sec each) + judges Q&A |
+| 6 | **Semi-Final** | Top 20 selected, second round of Q&A |
+| 7 | **Final Pitch Prep** | Top 10 refine pitches |
+| 8 | **Deliberation** | Judges score, select winners |
+
+---
+
+## Step 3: Agent Memory System
+
+Each agent gets its own memory directory to store research and knowledge:
+
+```
+memories/
+├── hackathon_<theme>_<date>/
+│   ├── participants/
+│   │   ├── p001_Alice/
+│   │   │   ├── idea.md
+│   │   │   ├── team.md
+│   │   │   ├── research.md
+│   │   │   └── pitch.md
+│   │   ├── p002_Bob/
+│   │   │   └── ...
+│   │   └── ... (1000 participant folders)
+│   ├── mentors/
+│   │   ├── mentor_tech/
+│   │   │   ├── feedback_given.md
+│   │   │   └── research.md
+│   │   ├── mentor_design/
+│   │   └── mentor_domain/
+│   └── judges/
+│       ├── judge_vc/
+│       │   ├── scores.md
+│       │   └── notes.md
+│       ├── judge_product/
+│       └── judge_academic/
+```
+
+**Memory contents per agent:**
+- `research.md` - Web search results, competitor analysis, technology verification
+- `idea.md` - Original project idea, pivots made
+- `team.md` - Team formation, member roles, collaboration notes
+- `pitch.md` - Pitch content, Q&A prep, feedback received
+- `feedback.md` - Mentor/judge feedback captured
+
+---
+
+## Step 4: Live Pitching Rounds with Q&A
+
+**Tick 5: Live Pitches (50 teams)**
+```
+Each team gets:
+- 30 seconds to present
+- 2 minutes Q&A from judges
+
+Format:
+[Team Name] - <pitch>
+Judges ask: "What's the differentiation?" "How will you use sponsor APIs?"
+```
+
+**Tick 6: Semi-Final Q&A (20 teams)**
+```
+Extended Q&A:
+- 5 minutes per team
+- Deep dive on feasibility, business model, technical stack
+- Judges probe sponsor integration strategy
+```
+
+**Tick 7: Final Pitches (10 teams)**
+```
+Full pitch deck presentation:
+- 5 minutes per team
+- Demo included
+- Full Q&A with all judges
+```
 
 ---
 
@@ -116,9 +188,12 @@ Final Score = Novelty(25) + Feasibility(25) + Impact(25) + Differentiation(20) +
 ### Simulation Details
 - Participants: <N>
 - Teams formed: <N>
-- Filtered to top: <N>
+- Live pitches: <N> teams
 - Finalists: <N>
 - Sponsor emphasis: <sponsors>
+
+### Memory Output
+All agent memories stored in: memories/hackathon_<theme>_<date>/
 ```
 
 ---
@@ -139,28 +214,29 @@ User: It's an AI hackathon, 1000 participants, 48h, sponsors are Google, Microso
 
 Agent: Running simulation...
 
-Tick 1: 1000 participants broadcast ideas (clustered by pattern)
-  - AI Agents: 320 participants
-  - Generative AI: 250 participants
-  - Edge AI / Privacy: 180 participants
-  - AI for Social Good: 150 participants
-  - Domain-Specific AI: 100 participants
+Tick 1: 1000 participants broadcast ideas
+  - Idea clusters form (AI Agents, Generative AI, etc.)
+  - Each participant creates: memories/.../p001/idea.md
 
 Tick 2: Teams form (~150 teams)
   - Team Alpha: AI Agents cluster
-  - Team Beta: Generative AI cluster
-  - ... (clusters become teams)
+  - Each team gets: memories/.../team_alpha/members.md
 
-Tick 3: Mentors filter to top 30
-  - Push sponsor integration (Google, Microsoft, OpenAI)
-  - Focus: production-ready, real-world impact
+Tick 3: Mentors filter to top 50
+  - Feedback stored: memories/.../mentors/mentor_tech/feedback.md
 
-Tick 4: Top 30 refine + judge questions
-  - Judges probe: differentiation, feasibility, sponsor APIs
+Tick 4: Top 50 refine
 
-Tick 5: Top 15 pitch prep
+Tick 5: LIVE PITCHES - All 50 teams pitch 30 sec + 2 min Q&A
+  - Team Alpha pitches: "NoCode AI - workflow builder for non-devs"
+  - Judge Q&A: "How do you differentiate from existing tools?"
+  - Pitch recorded: memories/.../team_alpha/pitch.md
 
-Tick 6: Deliberation & scoring
+Tick 6: Semi-Final - Top 20, 5 min Q&A each
+
+Tick 7: Final Pitches - Top 10, full 5 min + demo
+
+Tick 8: Deliberation & scoring
 
 Output:
 ## Hackathon: AI (1000 participants, 48h)
@@ -176,10 +252,11 @@ Output:
 3. CodeReview AI (21)
 
 ### Simulation Details
-- 150 teams formed from 1000 participants
-- Top 30 filtered by mentors
-- Top 15 reached final round
-- All top 3 used 2+ sponsor APIs
+- 1000 participants → 150 teams
+- Top 50 → Live pitches + Q&A
+- Top 20 → Semi-final Q&A
+- Top 10 → Final pitches
+- All memories stored in: memories/hackathon_ai_2026-05-01/
 ```
 
 ---
