@@ -63,20 +63,28 @@ If URL doesn't provide all details, ask:
 
 ---
 
-## Step 2: Run Simulation with 1000 Participants
+## Step 2: Run Simulation with 1000 Participants (Parallel)
 
 After details collected, run the **8-tick simulation**:
 
 | Tick | Phase | What Happens |
 |------|-------|-------------|
-| 1 | **Idea Dump** | 1000 participants broadcast project ideas (clustered) |
-| 2 | **Team Formation** | ~150-200 teams form around idea clusters |
-| 3 | **Mentorship** | Mentors filter to top 50 teams, give feedback |
-| 4 | **Refinement** | Top 50 iterate based on mentor feedback |
-| 5 | **Live Pitches + Q&A** | All 50 teams pitch (30 sec each) + judges Q&A |
-| 6 | **Semi-Final** | Top 20 selected, second round of Q&A |
-| 7 | **Final Pitch Prep** | Top 10 refine pitches |
-| 8 | **Deliberation** | Judges score, select winners |
+| 1 | **Idea Dump** | 1000 participants broadcast project ideas (PARALLEL) |
+| 2 | **Team Formation** | ~150-200 teams form around idea clusters (PARALLEL) |
+| 3 | **Mentorship** | 3 mentors give feedback to 50 teams (PARALLEL) |
+| 4 | **Refinement** | Top 50 iterate based on feedback (PARALLEL) |
+| 5 | **Live Pitches + Q&A** | All 50 teams pitch + Q&A (SEQUENTIAL per team) |
+| 6 | **Semi-Final** | Top 20, extended Q&A (SEQUENTIAL per team) |
+| 7 | **Final Pitch Prep** | Top 10 refine pitches (PARALLEL) |
+| 8 | **Deliberation** | 3 judges score + generate build guide (PARALLEL) |
+
+**Parallel Execution:**
+- All 1000 participants act simultaneously in Tick 1
+- All 150-200 teams act simultaneously in Tick 2
+- All 3 mentors work simultaneously in Tick 3
+- All 50 teams iterate simultaneously in Tick 4
+- Pitches run sequentially (one at a time) in Ticks 5-6
+- All judges deliberate in parallel in Tick 8
 
 ---
 
