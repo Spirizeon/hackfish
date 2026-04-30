@@ -36,18 +36,9 @@ Built on insights from 260+ real hackathons. Runs a 6-tick simulation that gener
 git clone https://github.com/yourusername/hackfish.git
 
 # Use
-- Copy src/SKILLS.md into your agent's skill registry
-- Use src/AGENTS.md prompts for participant, mentor, judge agents
+- Copy SKILLS.md into your agent's skill registry
+- Use AGENTS.md prompts for participant, mentor, judge agents
 - Run: /hackathon <theme>
-```
-
-**Source files:**
-```
-src/
-├── SKILLS.md    # Skill definition
-├── AGENTS.md    # Agent prompts (18KB)
-├── TEAMS.md     # Team roles
-└── WIKI-README.md
 ```
 
 ---
