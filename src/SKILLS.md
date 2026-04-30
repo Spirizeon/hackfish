@@ -1,6 +1,6 @@
-# Hackathon Winning Project Predictor
+# 🐟 Hackfish — Hackathon Winning Project Predictor
 
-This skill analyzes current trends from 260+ real hackathons to predict which project idea will **surely win** for a given theme. It then generates a complete MD file with a step-by-step build guide and pitch deck.
+Hackfish analyzes current trends from 260+ real hackathons to predict which project idea will **surely win** for a given theme. It then generates a complete MD file with a step-by-step build guide and pitch deck.
 
 ---
 

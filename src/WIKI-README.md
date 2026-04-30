@@ -1,10 +1,12 @@
-# Hackathon Winning Project Predictor
+# 🐟 Hackfish Knowledge Base
+
+**Hackfish** — AI-powered hackathon winning predictor
 
 **Total Hackathons Covered: 260+**
 **Domains: 9**
 **Prediction Accuracy: 78-100%**
 
-## What This Does
+## What Hackfish Does
 
 Predict which project will **surely win** any hackathon based on analysis of 260+ real winners.
 
@@ -39,27 +41,20 @@ Each output includes:
 ## Directory Structure
 ```
 hackfish/
-├── SKILLS.md                    # Skill definition
-├── AGENTS.md                    # Agent types
-├── TEAMS.md                     # Team structure
-├── WIKI-META.json               # Wiki metadata
-├── hackathon-*.json             # Research data by domain
-├── knowledge/                  # Team knowledge base
-│   └── WIKI-META.json
-└── hackathon-wiki/              # Full wiki
-    ├── README.md
-    ├── hackathons/
-    │   ├── ethglobal/          # Web3 events
-    │   ├── devfolio/           # Devfolio events
-    │   ├── major-tech/         # Major tech events
-    │   ├── healthcare/         # Healthcare events
-    │   ├── fintech/           # FinTech events
-    │   ├── edtech/            # EdTech events
-    │   ├── climate/           # Climate events
-    │   ├── civic/            # Civic events
-    │   └── ai-ml/            # AI/ML events
-    ├── patterns/              # Winning patterns
-    └── analysis/            # Simulation results
+├── README.md                    # Product landing (this is Hackfish!)
+├── src/                         # Documentation
+│   ├── SKILLS.md               # Skill definition
+│   ├── AGENTS.md               # Agent types
+│   ├── TEAMS.md                # Team structure
+│   └── WIKI-README.md          # This file
+├── data/                       # Research data (260+ hackathons)
+│   └── WIKI-META.json          # Wiki metadata
+├── examples/                   # Generated winning guides
+└── hackathon-wiki/             # Full knowledge base
+    └── hackathons/             # Individual event records
+        ├── ai-ml/              # AI/ML events
+        ├── healthcare/         # Healthcare events
+        └── ...
 ```
 
 ## Winning Patterns Across All Domains

@@ -1,6 +1,6 @@
-# Hackathon Simulation Teams
+# 🐟 Hackfish — Team Structure
 
-## Team Structure
+## Team Structure (Internal Development)
 
 ### Research Team
 | Member | Domain | Status |
