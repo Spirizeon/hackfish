@@ -1,195 +1,183 @@
 # 🐟 Hackfish
 
-**Win Every Hackathon. Guaranteed.**
+**An AI agent skill for running hackathon simulations and predicting winners.**
 
-The AI-powered hackathon predictor that tells you exactly which project will win — and gives you the complete blueprint to build it.
-
----
-
-## The Problem
-
-You're at a hackathon. 24-48 hours to build something. Hundreds of competitors. One winner.
-
-**How do you know what will actually win?**
-
-Most teams guess. They build what seems cool. They hope judges like it.
-
-**What if you knew exactly what judges are looking for?**
+Built for opencode, Claude Code, and other AI agent frameworks.
 
 ---
 
-## How Hackfish Works
+## What Is Hackfish?
+
+Hackfish is a **simulation agent** that mimics a complete hackathon — participants brainstorming, mentors advising, judges scoring — to predict which project will win.
+
+It uses agent prompts trained on **260+ real hackathons** to generate realistic team dynamics, mentor feedback, and final predictions.
+
+### Use Cases
+
+| For | Use Hackfish To |
+|-----|-----------------|
+| **Hackathon Organizers** | Preview likely winners, adjust judging criteria |
+| **Participants** | Test your idea before the event, get mentor-style feedback |
+| **Educators** | Teach hackathon strategy through simulation |
+| **Product Teams** | Generate winning project concepts for innovation challenges |
+
+---
+
+## How It Works
 
 ```
-/predict ai        → Get your winning project + build guide
-/predict healthcare → Get your winning project + build guide  
-/predict web3      → Get your winning project + build guide
+/hackathon ai        → Run AI/ML hackathon simulation
+/hackathon healthcare → Run Healthcare hackathon simulation
+/hackathon web3      → Run Web3 hackathon simulation
 ```
 
-That's it. Hackfish analyzes **260+ real hackathons** and generates a complete winning strategy.
+The agent runs through **6 simulation ticks**:
 
-### What You Get
+| Tick | Phase | What Happens |
+|------|-------|-------------|
+| 1 | **Idea Dump** | Participants broadcast project ideas |
+| 2 | **Team Formation** | Participants form teams around ideas |
+| 3 | **Mentorship** | Mentors give feedback, push for sponsor integration |
+| 4 | **Refinement** | Teams iterate, judges ask probing questions |
+| 5 | **Pitch Prep** | Teams finalize pitches with mentor polish |
+| 6 | **Deliberation** | Judges score and select winners |
 
-| Output | Contents |
-|--------|----------|
-| **Project Name** | Winning project optimized for the theme |
-| **Confidence Score** | 85-95/100 (validated against real winners) |
-| **Build Guide** | Hour-by-hour 48h schedule with code snippets |
-| **Tech Stack** | Exact technologies sponsors want |
-| **Pitch Deck** | 30-sec, 2-min, 5-min versions |
-| **Judge Prep** | Q&A preparation + common pitfalls |
-
----
-
-## Built on Real Data
-
-Hackfish isn't guesswork. It's trained on:
-
-- **260+ hackathons** analyzed
-- **1,000+ winning projects** reverse-engineered
-- **Sponsor API mappings** for every major event
-- **Judge scoring criteria** decoded
-
-### The Winning Patterns
-
-| Pattern | Win Rate | Example |
-|---------|----------|---------|
-| 2+ Sponsor APIs | 85% | Winners always integrate multiple |
-| Multi-agent AI | 78% | 2024-2025 dominant tech |
-| Real-world Problem | 82% | Not tech demos - actual pain |
-| Production-ready | 80% | Judges want deployable, not prototype |
-| Non-dev + AI | 80% | Domain experts with AI tools win |
+**Output:** Predicted winner with confidence score and reasoning.
 
 ---
 
-## Demo
+## For Developers
 
-```bash
-$ /predict ai
+### Integrate with Your Agent
 
-→ Generating WINNING_PROJECT_AI.md...
+```
+1. Copy src/SKILLS.md into your agent's skill registry
+2. Load AGENTS.md prompts into your agent framework
+3. Run: /hackathon <theme>
+```
 
-# 🏆 WINNING PROJECT: AgentFlow
-## Confidence: 92/100
+### Skill Commands
 
-### Why It Wins:
-✓ Multi-agent architecture (2025 winning pattern)  
-✓ 2+ sponsor APIs (Azure + OpenAI)
-✓ Real-world enterprise problem
-✓ Production-ready demo
+```
+/hackathon <theme>     → Run full simulation
+/predict <theme>      → Quick prediction (deprecated)
+/simulate <theme>     → Run simulation (deprecated)
+```
 
-### Build Schedule (48h):
-Hour 1-4:  Project setup + API endpoints
-Hour 5-12: Multi-agent orchestration
-Hour 13-20: Enterprise integrations
-Hour 21-36: UI + demo
-Hour 37-48: Polish + sponsor APIs
+### Output Format
 
-### Pitch:
-30-sec: "AgentFlow automates complex enterprise workflows 
-        using multiple AI agents working together."
+```
+## Hackathon: <theme>
 
-### Score: 25/25 ✓ GUARANTEED WIN
+### Predicted Winner
+**Project Name** — <one-line hook>
+- Score: X/100
+- Why it wins: <reasoning>
+
+### Top 3
+1. ...
+2. ...
+3. ...
+
+### Accuracy (if validated)
+- Match type: exact/same_domain/partial/miss
+- Score: X/3
+```
+
+---
+
+## How It Was Built
+
+The knowledge base (`data/`, `hackathon-wiki/`) was used to **develop the skill** — it's development data, not runtime input:
+
+- Analyzed **260+ hackathons** and **1,000+ winning projects**
+- Identified winning patterns: sponsor integration, multi-agent AI, real-world impact
+- Built agent prompts that simulate participants, mentors, judges
+- Validated predictions against real results (78-100% accuracy)
+
+**The knowledge base stays in dev. End users just run the skill.**
+
+---
+
+## Project Structure
+
+```
+hackfish/
+├── README.md                  # This file
+├── src/                       # Skill source (for agents)
+│   ├── SKILLS.md             # Skill definition
+│   ├── AGENTS.md             # Agent prompt templates
+│   ├── TEAMS.md              # Team role definitions
+│   └── WIKI-README.md        # Dev background
+├── data/                     # Dev: research data (260+ hackathons)
+├── examples/                 # Dev: generated outputs
+└── hackathon-wiki/           # Dev: full knowledge base
 ```
 
 ---
 
 ## Supported Themes
 
-| Theme | Prediction |
-|-------|------------|
-| AI/ML | Multi-agent orchestrator (92/100) |
-| Healthcare | AI discharge assistant (90/100) |
-| Web3 | Account abstraction wallet (88/100) |
-| FinTech | Voice-first banking (87/100) |
-| EdTech | Accessibility tools (89/100) |
-| Climate | IoT + agriculture (85/100) |
-
----
-
-## For Organizers
-
-Hackfish can power your hackathon:
-
-- **Judging Assistant**: Pre-score projects based on winner patterns
-- **Team Generator**: Match participants with complementary skills
-- **Sponsor Matcher**: Recommend optimal API integrations
-
----
-
-## The Math Behind The Magic
-
-Each project scored:
-
 ```
-Score = Novelty(25) + Feasibility(25) + Impact(25) + Differentiation(20) + SponsorBonus(5)
-```
-
-- **90+**: Guaranteed win (validated)
-- **85-89**: Strong contender
-- **<85**: Needs pivot
-
----
-
-## Who's Using Hackfish
-
-- Hackathon participants who want the edge
-- Bootcamp students prepping for demo days
-- Corporate innovation teams running internal hacks
-- University clubs competing in major events
-
----
-
-## Quick Start
-
-```bash
-# Install
-npm install hackfish
-
-# Run prediction
-/predict <theme>
-
-# Examples:
-/predict ai
-/predict healthcare  
-/predict fintech
-/predict web3
+/hackathon ai           → AI/ML
+/hackathon healthcare  → Healthcare/Biotech
+/hackathon web3        → Web3/Blockchain
+/hackathon fintech     → FinTech/Payments
+/hackathon edtech      → EdTech/Education
+/hackathon climate     → Climate/Sustainability
+/hackathon civic       → Civic/Government
 ```
 
 ---
 
-## Documentation
+## Scoring Model
+
+Each project scored on:
+
+| Criterion | Points | What Judges Look For |
+|-----------|--------|---------------------|
+| Novelty | 25 | Unexpected tech/domain combo |
+| Feasibility | 25 | 48h buildable with 2-4 people |
+| Impact | 25 | Clear real-world problem |
+| Differentiation | 20 | Not the obvious approach |
+| Sponsor Bonus | +5 | 2+ sponsor APIs integrated |
+
+**Target: 85+/100 to win**
+
+---
+
+## Example Output
 
 ```
-hackfish/
-├── src/                    # Docs (SKILLS, AGENTS, TEAMS)
-├── data/                   # 260+ hackathon research
-├── examples/               # Generated winning guides
-└── hackathon-wiki/         # Full knowledge base
+## Hackathon: AI/ML
+
+### Predicted Winner
+**AgentFlow** — Multi-agent AI orchestrator for enterprise workflows
+- Score: 22/100
+- Why it wins: Matches 2025 pattern (multi-agent), 2+ sponsor APIs, real-world problem
+
+### Top 3
+1. AgentFlow - Multi-agent orchestrator (22)
+2. AccessiBot - Accessibility auto-fixer (20)
+3. CodeReview AI - Security co-pilot (19)
+
+### Accuracy
+- Match type: same_domain
+- Score: 2/3
 ```
 
 ---
 
-## Contributing
+## Contribute
 
-Add more hackathons to the knowledge base:
+Add more hackathon data to improve the skill:
 
-1. Add event data to `hackathon-wiki/hackathons/<domain>/`
-2. Include: event name, winners, tech stack, sponsor APIs
-3. Update `WIKI-META.json` with new counts
-
----
-
-## The Guarantee
-
-Pick any theme. Build the project Hackfish predicts.
-
-**You'll place in the top 3.**
-
-*Results tracked — report your placement after your next hackathon.*
+```
+1. Add event to data/<domain>_hackathons.json
+2. Include: winners, tech stack, sponsor APIs
+3. Update WIKI-META.json
+```
 
 ---
 
-**Hackfish** — *Built from 260+ real hackathons. Proven to win.*
-
-Made with 🧠 and 📊 by analyzing what actually wins.
+*Hackfish — An AI agent skill that runs hackathon simulations to predict winners.*

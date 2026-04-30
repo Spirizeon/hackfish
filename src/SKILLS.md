@@ -1,48 +1,44 @@
-# 🐟 Hackfish — Hackathon Winning Project Predictor
+# 🐟 Hackfish — Hackathon Simulation Skill
 
-Hackfish analyzes current trends from 260+ real hackathons to predict which project idea will **surely win** for a given theme. It then generates a complete MD file with a step-by-step build guide and pitch deck.
+An AI agent skill that runs hackathon simulations to predict winners.
+
+**For use with opencode, Claude Code, and other AI agent frameworks.**
 
 ---
 
 ## When to Use
 
 Use this skill when the user says:
-- `/predict <theme>` or `/win <theme>`
-- "what project will win for <theme>?"
-- "give me a winning project idea for <theme>"
-- "how to win a <theme> hackathon"
-- "build guide and pitch for <theme> hackathon"
+- `/hackathon <theme>` or `/simulate <theme>`
+- "run a hackathon simulation for <theme>"
+- "predict who will win the <theme> hackathon"
+- "simulate a <theme> hackathon"
 
 ---
 
 ## How It Works
 
-### Step 1: Analyze Knowledge Base
-Query the wiki for:
-- Winning patterns in the given theme
-- Sponsor APIs that winners used
-- Technologies that dominated
-- Real-world problems solved
+Hackfish runs a **6-tick simulation** that mirrors a real hackathon:
 
-### Step 2: Identify Highest Confidence Winner
-Based on 260+ hackathon data, select the project with:
-- Highest pattern match (sponsor integration, AI agents, real-world impact)
-- Best differentiation from obvious ideas
-- Clear feasibility in 24-48h
+| Tick | Phase | What Happens |
+|------|-------|-------------|
+| 1 | **Idea Dump** | Participants broadcast project ideas |
+| 2 | **Team Formation** | Participants form teams around compatible ideas |
+| 3 | **Mentorship** | Mentors give feedback, push for sponsor integration |
+| 4 | **Refinement** | Teams iterate, judges ask probing questions |
+| 5 | **Pitch Prep** | Teams finalize pitches with mentor polish |
+| 6 | **Deliberation** | Judges score and select winners |
 
-### Step 3: Generate MD Output
-Create `WINNING_PROJECT_<theme>.md` containing:
-- Project name and one-line hook
-- Step-by-step build instructions
-- Tech stack with sponsor API recommendations
-- Pitch deck template (30-second, 2-minute, 5-minute versions)
-- Common pitfalls to avoid
+The simulation uses agent prompts (see `AGENTS.md`) to generate realistic:
+- Participant behavior (idea generation, team formation)
+- Mentor feedback (pushing for novelty, feasibility, sponsor integration)
+- Judge evaluation (scoring, deliberation)
 
 ---
 
-## Knowledge Base Reference
+## Winning Patterns (From Development)
 
-### Winning Patterns (2024-2025)
+These patterns were identified from 260+ hackathons and inform the simulation:
 
 | Pattern | Win Rate | Example |
 |---------|----------|---------|
@@ -52,22 +48,11 @@ Create `WINNING_PROJECT_<theme>.md` containing:
 | **Non-dev with AI** | 80% | Domain experts using AI tools |
 | **Accessibility focus** | 75% | Clear user need, high impact |
 
-### Domain-Specific Winners
-
-| Domain | Winning Project Type | Top Sponsors |
-|--------|---------------------|---------------|
-| AI/ML | AI Agents, multi-agent systems | Azure, GCP, OpenAI |
-| Healthcare | EHR integration, diagnostics | InterSystems, Google Health |
-| Web3 | Account abstraction, smart wallets | Stackup, Alchemy, Circle |
-| FinTech | Accessible banking, embedded finance | Plaid, Stripe, Mastercard |
-| EdTech | Accessibility tools, AI tutoring | Google, Microsoft |
-| Climate | IoT sensors, carbon tracking | AWS IoT, NASA |
-
 ---
 
 ## Scoring Algorithm
 
-Before recommending, score potential projects:
+Each project scored during deliberation:
 
 ```
 Final Score = Novelty(25) + Feasibility(25) + Impact(25) + Differentiation(20) + SponsorBonus(5)
@@ -85,77 +70,110 @@ Final Score = Novelty(25) + Feasibility(25) + Impact(25) + Differentiation(20) +
 
 ---
 
-## Output: Winning Project MD File
+## Output Format
 
-Generated file includes:
+```
+## Hackathon: <theme>
 
-### 1. Project Overview
-- Name, one-line pitch, target audience
-- Why it will win (pattern match reasoning)
+### Predicted Winner
+**Project Name** — <one-line hook>
+- Score: X/100
+- Why it wins: <reasoning>
 
-### 2. Build Guide
-- Tech stack with version numbers
-- Hour-by-hour build schedule (24h / 48h)
-- Key integrations (sponsor APIs)
-- Code snippets for critical features
+### Top 3
+1. Project A - <hook> (score)
+2. Project B - <hook> (score)
+3. Project C - <hook> (score)
 
-### 3. Pitch Deck
-- **30-sec version**: One-line hook + demo
-- **2-min version**: Problem, solution, demo, team
-- **5-min version**: Full pitch with business case
-
-### 4. Common Pitfalls
-- What to avoid
-- What judges hate
-- What separates winners from runners-up
+### Simulation Notes
+- Teams formed: X
+- Mentor feedback themes: <themes>
+- Judge criteria emphasized: <criteria>
+```
 
 ---
 
 ## Example Usage
 
 ```
-User: /predict healthcare
+User: /hackathon ai
 
-Output: WINNING_PROJECT_healthcare.md
+Agent runs simulation:
 
-Content:
-## Project: MedFlow - AI Discharge Assistant
-## Score: 92/100
+Tick 1: 8 participants broadcast ideas
+  - CodeReview AI, LocalAI, AccessiBot, NoCode AI, EdgeIoT...
 
-### Why It Will Win:
-- Matches 2024-2025 pattern: AI + healthcare + real-world impact
-- Uses sponsor APIs: FHIR, Epic, Twilio
-- Solves actual problem: Hospital discharge bottlenecks
+Tick 2: Teams form
+  - Team Alpha (4): CodeReview AI
+  - Team Beta (3): NoCode AI
+  - Team Gamma (2): AccessiBot
 
-### Build Guide:
-Hour 1-4: Core API + FHIR integration
-Hour 5-12: LLM-powered discharge logic
-...
+Tick 3: Mentors give feedback
+  - Push sponsor API integration
+  - NoCode AI: "Strong real-world impact pattern"
+  - AccessiBot: "Clear user need, auto-fix differentiation"
 
-### Pitch:
-30-sec: "MedFlow uses AI to get patients home 40% faster"
-2-min: [Full deck template]
-...
+Tick 4: Refinement + judge questions
+  - All teams pivot toward production-ready
+  - Judges probe sponsor integration
+
+Tick 5: Pitch prep
+  - NoCode AI: Non-developer focus, 2 sponsor APIs
+  - AccessiBot: Auto-fix, accessibility
+  - CodeReview AI: Security domain
+
+Tick 6: Deliberation
+  - NoCode AI: 25/100 (wins)
+  - AccessiBot: 22/100
+  - CodeReview AI: 21/100
+
+Output:
+## Hackathon: AI
+
+### Predicted Winner
+**NoCode AI** — AI workflow builder for non-developers
+- Score: 25/100
+- Why: Matches "non-dev with AI" pattern, 2+ sponsor APIs
+
+### Top 3
+1. NoCode AI (25)
+2. AccessiBot (22)
+3. CodeReview AI (21)
 ```
 
 ---
 
-## Web Search Integration
+## Web Search (Optional)
 
-Before finalizing prediction, search for:
-1. "What won at [theme] hackathons 2024-2025"
-2. "[Theme] sponsor APIs available"
-3. "What are judges looking for in [theme] hacks"
+During simulation, agents can use web search to verify claims:
+- "What won at [theme] hackathons recently?"
+- "[Sponsor] API documentation for [use case]"
+- "Competitors for [project type]"
 
-Update predictions based on latest trends.
+This is optional — the simulation works without it.
 
 ---
 
-## Accuracy Tracking
+## Knowledge Base (Development Only)
 
-After user's hackathon:
-1. Did you win? (Yes/No)
-2. What place?
-3. What分数 did you score?
+The `data/` and `hackathon-wiki/` directories contain research used to **build** the skill — not for runtime use.
 
-Update knowledge base with results to improve future predictions.
+- 260+ hackathons analyzed
+- 1,000+ winning projects reverse-engineered
+- Patterns identified: sponsor integration, AI agents, real-world impact
+
+**End users just run the simulation. The knowledge base stays in dev.**
+
+---
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| `SKILLS.md` | This skill definition |
+| `AGENTS.md` | Agent prompt templates (participant, mentor, judge) |
+| `TEAMS.md` | Team role definitions |
+
+---
+
+*Hackfish — Run hackathon simulations to predict winners.*
