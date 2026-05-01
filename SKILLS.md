@@ -231,7 +231,43 @@ After details collected, run the **48-tick simulation** (one tick = one hour of 
 
 ---
 
-## Step 4: Agent Communication & Verbose Output
+## Verbose Display Rules (MANDATORY)
+
+**Every agent MUST verbosely display their actions during simulation:**
+
+### Participants (p00X_*)
+- **Broadcasting**: Display full message with timestamp
+  Example: `"Tick 1, 10:00:01 - Broadcasting: 'I'm building PayFlow - Invoice automation...'"`
+- **Messaging**: Display sender → recipient + full message content
+  Example: `"Tick 5, 10:05:00 - To p005_aisha: 'Your InvoiceAI complements PayFlow. Team up?'"`
+- **When stuck**: Display `"NEED HELP: [error/problem]" + who they ask`
+  Example: `"Tick 34, 10:34:00 - NEED HELP: React useState broken - Asking p001_sarah"`
+- **When pivoting**: Display `"PIVOT: [Old idea] → [New idea] (Reason: [mentor feedback])"`
+  Example: `"Tick 12, 10:12:00 - PIVOT: 'Auto-reconciliation' → 'Track via webhooks' (Reason: mentor_tech correction)"`
+
+### Teams (in channels/*.md)
+- **All discussions**: Display ALL messages with timestamps
+  Example: `"Tick 17, 10:17:00 - Sarah: 'Team Alpha is formed! I'm Sarah (senior: technical)'"`
+- **Decisions**: Display `"Tick X - Decision: [What] (Reason: [Why])"`
+  Example: `"Tick 26, 10:26:00 - Decision: Next.js + Locus SDK (Reason: mentor_tech approved)"`
+
+### Mentors (mentor_*)
+- **Verifying**: Display `"Tick X - Reviewing p001_sarah: [full feedback message]"`
+  Example: `"Tick 10, 10:10:00 - Reviewing p001_sarah: 'Auto-reconciliation is misleading. Use webhooks...'"`
+- **Helping**: Display `"Tick X - Helping p003_priya: [full explanation + code sample]"`
+  Example: `"Tick 11, 10:11:30 - Helping p003_priya: 'Webhooks: set endpoint, verify signature. Here's code...'"`
+- **Sign-off**: Display `"Tick X - APPROVED/REJECTED: [team_name] - [reason]"`
+  Example: `"Tick 30, 10:30:00 - APPROVED: Team Alpha - Next.js + 2 Locus APIs. You may build."`
+
+### Judges (judge_*)
+- **Reading memories**: Display `"Tick 47 - Reading: participants/p001_*/idea.md, teams/team_alpha/discussion.md, channels/*..."`
+- **Asking Q&A**: Display `"Tick 47 - Asking p001_sarah (Team Alpha): 'What's your monetization?'"`
+- **Scoring**: Display `"Tick 48 - Scoring Team Alpha: Novelty(4) + Feasibility(5) + Impact(4) + Differentiation(3) + Sponsor(5) = 21/25"`
+- **Deliberating**: Display `"Tick 48 - Deliberation: Team Alpha wins tie-breaker over Gamma because [reason]."`
+
+---
+
+## Step 5: Agent Communication & Verbose Output
 
 ### Memory Logging Requirement
 

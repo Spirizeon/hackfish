@@ -1,10 +1,10 @@
-# 🐟 Hackfish — Hackathon Simulation System
+#  Hackfish — Hackathon Simulation System
 
 An AI agent system that runs hackathon simulations to predict winners based on 260+ real hackathon patterns.
 
 ---
 
-## 📋 Overview
+##  Overview
 
 The system simulates a complete hackathon using AI agents (participants, mentors, judges) that interact, make mistakes, learn, and build projects — exactly like real humans. The simulation runs for **48 ticks** (one tick = one hour of hackathon time).
 
@@ -18,7 +18,7 @@ The system simulates a complete hackathon using AI agents (participants, mentors
 
 ---
 
-## 🗂️ File Structure
+##  File Structure
 
 ```
 hackfish/
@@ -58,7 +58,7 @@ hackfish/
 
 ---
 
-## 🔄 48-Tick Simulation Flow
+##  48-Tick Simulation Flow
 
 ### **PHASE 1: DISCUSS (Ticks 1-16) — Ideas Only, NO Coding!**
 
@@ -101,7 +101,7 @@ hackfish/
 
 ---
 
-## 🤖 Agent Types & Behavior
+##  Agent Types & Behavior
 
 ### **1. Participants (p00X_*)**
 - **Count**: 8-12 per simulation (1000 in full scale)
@@ -138,7 +138,7 @@ hackfish/
 
 ---
 
-## 💬 Channels Directory (`channels/`)
+##  Channels Directory (`channels/`)
 
 Dedicated chat logs where agents interact:
 
@@ -167,7 +167,7 @@ Dedicated chat logs where agents interact:
 
 ---
 
-## 📊 Memory Logging Rules
+##  Memory Logging Rules
 
 **Every individual agent logs to their own markdown files:**
 
@@ -199,7 +199,7 @@ Dedicated chat logs where agents interact:
 
 ---
 
-## 🏆 Winning Patterns (From 260+ Hackathons)
+##  Winning Patterns (From 260+ Hackathons)
 
 | Pattern | Win Rate | Example |
 |---------|----------|---------|
@@ -211,7 +211,7 @@ Dedicated chat logs where agents interact:
 
 ---
 
-## 📝 Scoring Algorithm
+##  Scoring Algorithm
 
 Each project scored during deliberation (Tick 48):
 
@@ -267,7 +267,7 @@ After Tick 48, create `build_guides/hackathon_<theme>_<date>/winner_build_guide.
 
 ---
 
-## 📊 Example Simulation Output
+##  Example Simulation Output
 
 ```
 ## Hackathon: Locus Paygentic #4 (12 participants, 48h)
@@ -293,7 +293,7 @@ All agent memories stored in: memories/hackathon_locus_2026-05-01/
 
 ---
 
-## 🔧 Technical Details
+##  Technical Details
 
 ### Agent Communication Matrix
 
@@ -315,7 +315,7 @@ All agent memories stored in: memories/hackathon_locus_2026-05-01/
 
 ---
 
-## 📚 Files Explained
+##  Files Explained
 
 | File | Purpose |
 |------|---------|
@@ -325,7 +325,7 @@ All agent memories stored in: memories/hackathon_locus_2026-05-01/
 
 ---
 
-## 🎯 Key Principles
+##  Key Principles
 
 1. **NO CODING until Phase 3 (Tick 33+)** — Discuss & verify first!
 2. **Mentors verify between EVERY tick (1-32)** — Continuous feedback
@@ -333,6 +333,30 @@ All agent memories stored in: memories/hackathon_locus_2026-05-01/
 4. **Channels are mandatory** — All interactions logged in `channels/`
 5. **Individual memory** — Every agent logs to their own folder
 6. **Sponsor integration** — #1 winning pattern (2+ APIs = bonus +5 pts)
+
+## Verbose Display Rules
+
+**Every agent MUST verbosely display their actions during simulation:**
+
+### Participants
+- When broadcasting: Display full message with timestamp (e.g., "Tick 1, 10:00:01 - Broadcasting: 'I'm building PayFlow...'")
+- When messaging: Display sender → recipient + full message content
+- When stuck: Display "NEED HELP: [error/problem]" + who they ask
+- When pivoting: Display "PIVOT: Old idea → New idea (reason: [mentor feedback])"
+
+### Mentors
+- When verifying: Display "Tick X - Reviewing p001_sarah: [full feedback message]"
+- When helping: Display "Tick X - Helping p003_priya: [full explanation + code sample]"
+- When signing-off: Display "Tick X - APPROVED/REJECTED: [team_name] - [reason]"
+
+### Judges
+- When reading memories: Display "Tick 47 - Reading: participants/p001_*/idea.md, teams/team_alpha/discussion.md..."
+- When asking Q&A: Display "Tick 47 - Asking p001_sarah: 'What's your monetization?'"
+- When scoring: Display "Tick 48 - Scoring Team Alpha: Novelty(4) + Feasibility(5) + Impact(4) + Differentiation(3) + Sponsor(5) = 21/25"
+
+### Teams (in channels/*.md)
+- When discussing: Display ALL messages with timestamps (e.g., "Tick 17, 10:17:00 - Sarah: 'Team Alpha is formed!'")
+- When deciding: Display "Tick 25 - Decision: Using Next.js + Locus SDK (reason: mentor_tech approved)")
 
 ---
 
