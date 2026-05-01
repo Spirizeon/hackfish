@@ -88,7 +88,92 @@ After details collected, run the **8-tick simulation**:
 
 ---
 
-## Step 3: Agent Memory System
+## Step 3: Agent Communication & Verbose Output
+
+### Verbose Output Requirement
+
+Every agent's output is written verbosely to their dedicated markdown file:
+
+```
+memories/hackathon_<theme>_<date>/
+├── participants/
+│   ├── p001_Alice/
+│   │   ├── idea.md          # Raw idea + rationale
+│   │   ├── broadcast.md    # What they broadcasted to all
+│   │   ├── received.md      # Ideas received from others (999)
+│   │   ├── team.md          # Team formation process
+│   │   ├── messages.md      # ALL messages sent/received
+│   │   ├── research.md      # Web search results
+│   │   ├── pitch.md         # Pitch content
+│   │   └── qa_responses.md  # Judge Q&A responses
+│   └── ... (1000 participants)
+├── teams/
+│   ├── team_alpha/
+│   │   ├── discussion.md   # Team chat log
+│   │   ├── decisions.md    # Key decisions made
+│   │   └── collaboration.md # How members worked together
+├── mentors/
+│   ├── mentor_tech/
+│   │   ├── feedback.md     # Feedback given to each team
+│   │   ├── research.md     # Technology research done
+│   │   └── messages.md     # Mentor-team communication
+└── judges/
+    ├── judge_vc/
+    │   ├── questions.md    # Questions asked during Q&A
+    │   ├── scores.md       # Scoring for each team
+    │   └── deliberation.md # Discussion with other judges
+```
+
+### Inter-Agent Communication Matrix
+
+| Tick | Who Talks to Whom | How | Where Stored |
+|------|------------------|-----|---------------|
+| 1 | Participant → All 999 | Broadcast | `broadcast.md` |
+| 1 | Participant ← 999 | Receive | `received.md` |
+| 2 | Teammates ↔ | Direct messages | `messages.md` |
+| 3 | Mentor → Teams | Feedback | `feedback.md` |
+| 3 | Teams → Mentor | Questions | `messages.md` |
+| 4 | Team members ↔ | Team chat | `discussion.md` |
+| 5 | Team → Judges | Pitch | `pitch.md` |
+| 5 | Judges → Team | Q&A | `qa_responses.md` |
+| 8 | Judge ↔ Judge | Debate | `deliberation.md` |
+
+### Verbose Output Example
+
+```markdown
+# p001_Alice - Participant
+
+## Broadcast (Tick 1, 10:00:01.234)
+I'm building "SafeVault" - a smart wallet with social recovery
+using account abstraction. Most Web3 users lose funds when they
+lose keys. This solves that with social guardians.
+
+## Received (Tick 1, 10:00:01.500 - 10:05:00.000)
+- p023_Bob: "ZK Identity Verification" - ZK proofs for identity
+- p045_Charlie: "DeFi Aggregator" - Best rates across protocols
+- p067_Dave: "NFT Marketplace" - Marketplace for real-world assets
+- p089_Eve: "Cross-border Payments" - Stablecoin remittance
+- ... (50 more ideas in received.md)
+
+## Team Formation (Tick 2, 10:15:00.000)
+Sent to p023_Bob: "Your ZK idea complements wallet. Team up?"
+Received from p023_Bob: "Yes! I have ZK expertise."
+Received from p089_Eve: "I can do frontend. Need a team?"
+
+## Messages Log (Tick 2, ongoing)
+[MESSAGE LOG - all 47 messages in this tick]
+- 10:15:00 → p023_Bob: Team invite
+- 10:15:30 ← p023_Bob: Accept
+- 10:16:00 → p089_Eve: Team invite
+- 10:16:30 ← p089_Eve: Accept
+- ...
+
+[... continues throughout all ticks ...]
+```
+
+---
+
+## Step 4: Agent Memory System
 
 Each agent gets its own memory directory to store research and knowledge:
 
@@ -127,7 +212,7 @@ memories/
 
 ---
 
-## Step 4: Generate Build Guide
+## Step 5: Generate Build Guide
 
 After tick 8 (deliberation), generate a complete build guide for the winner:
 
@@ -165,7 +250,7 @@ build_guides/
 
 ---
 
-## Step 5: Live Pitching Rounds with Q&A
+## Step 6: Live Pitching Rounds with Q&A
 
 **Tick 5: Live Pitches (50 teams)**
 ```
