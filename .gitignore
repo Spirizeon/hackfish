@@ -36,5 +36,5 @@ logs/
 credentials.json
 
 # Hackfish runtime outputs
-memories/
+# memories/
 build_guides/
