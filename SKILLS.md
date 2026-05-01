@@ -218,9 +218,16 @@ After details collected, run the **48-tick simulation** (one tick = one hour of 
 
 **Parallel Execution:**
 - Ticks 1-32: Discussion, shaping, verification (NO coding yet!)
-- Ticks 33-46: Development phase (teams build in parallel)
-- Tick 47: Sequential pitches (one team at a time)
-- Tick 48: Judges deliberate in parallel
+  - **ALL participants** broadcast + discuss simultaneously (PARALLEL)
+  - **ALL teams** discuss in `channels/team_*.md` simultaneously (PARALLEL)
+  - **ALL 3 mentors** verify teams simultaneously (PARALLEL)
+- Ticks 33-46: Development phase (ALL teams build in parallel)
+  - **ALL teams** collaborate in `channels/team_*.md` simultaneously (PARALLEL)
+- Tick 47: **PARALLEL JUDGING** - ALL 3 judges review ALL team memories simultaneously!
+  - Judges read ALL `participants/*`, `teams/*`, `channels/*` in parallel
+  - Judges ask Q&A via `channels/p2j_*.md` in parallel
+  - NO sequential pitches - ALL teams judged at the SAME TIME
+- Tick 48: **PARALLEL DELIBERATION** - ALL 3 judges score + deliberate simultaneously!
 
 ---
 

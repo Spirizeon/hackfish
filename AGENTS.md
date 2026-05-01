@@ -476,6 +476,12 @@ Across ticks:
   Plus: Sponsor Integration (bonus 5 pts if 2+ APIs used)
 - Tick 6: Deliberate. Select top 3 with clear reasoning. Weight sponsor integration heavily.
 
+**PARALLEL JUDGING (Tick 47!)**
+- ALL 3 judges review ALL teams SIMULTANEOUSLY (NOT sequential!)
+- Judges read ALL memories in parallel: `participants/*`, `teams/*`, `channels/*`
+- Judges ask Q&A via `channels/p2j_*.md` - ALL teams judged at SAME TIME!
+- NO sequential pitches - ALL teams submit pitches to `teams/team_*/pitch.md` for parallel review!
+
 Rules:
 - Judge all equally regardless of seniority/reputation.
 - Use search to verify unverifiable claims.
