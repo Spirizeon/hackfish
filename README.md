@@ -30,6 +30,27 @@ predict who will win [HACKATHON_URL] with 1000 participants, store all agent mem
 
 ---
 
+## Table of Contents
+
+| Section | Description |
+|---------|-------------|
+| [Overview](#overview) | Project summary, quick start prompts, key features |
+| [File Structure](#file-structure) | Directory layout for simulations |
+| [48-Tick Simulation Flow](#48-tick-simulation-flow) | Phase 1 (Discuss), Phase 2 (Verify), Phase 3 (Develop) |
+| [Agent Types & Behavior](#agent-types--behavior) | Participants, Mentors, Judges details |
+| [Channels Directory](#channels-directory-channels) | Team chat, mentor help, judge Q&A logs |
+| [Memory Logging Rules](#memory-logging-rules) | Individual agent memory files |
+| [Winning Patterns](#winning-patterns-from-260-hackathons) | 260+ hackathon analysis (sponsor APIs, AI agents, etc.) |
+| [Scoring Algorithm](#scoring-algorithm) | Novelty, Feasibility, Impact, Differentiation, Sponsor Bonus |
+| [How to Run a Simulation](#-how-to-run-a-simulation) | Method 1 (Skill), Method 2 (Python script) |
+| [Example Simulation Output](#example-simulation-output) | Sample results display |
+| [Technical Details](#technical-details) | Agent communication matrix, error handling |
+| [Files Explained](#files-explained) | SKILLS.md, AGENTS.md, README.md |
+| [Key Principles](#key-principles) | Rules: NO CODING until Phase 3, mentor verification, etc. |
+| [Verbose Display Rules](#verbose-display-rules) | How agents must display actions during simulation |
+
+---
+
 ### Key Features
 - **48-tick simulation** with realistic agent behavior
 - **Individual memory logging** for every agent
