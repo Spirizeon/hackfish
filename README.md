@@ -8,6 +8,28 @@ An AI agent system that runs hackathon simulations to predict winners based on 2
 
 The system simulates a complete hackathon using AI agents (participants, mentors, judges) that interact, make mistakes, learn, and build projects — exactly like real humans. The simulation runs for **48 ticks** (one tick = one hour of hackathon time).
 
+### Quick Start — Copy-Paste Prompts
+
+**Run a full simulation with 800 participants, verbose display, memory storage, and build guide:**
+
+```
+run a hackathon simulation skill for [HACKATHON_URL], display, log and store individual agentic memories. total participants 800 teams
+```
+
+**Run with build plan generation:**
+
+```
+simulate hackathon URL: [URL], 800 participants, display logs, store memories in memories/, generate build guide
+```
+
+**Scale to 1000 participants:**
+
+```
+predict who will win [HACKATHON_URL] with 1000 participants, store all agent memories, output build plan
+```
+
+---
+
 ### Key Features
 - **48-tick simulation** with realistic agent behavior
 - **Individual memory logging** for every agent
@@ -233,37 +255,76 @@ Final Score = Novelty(25) + Feasibility(25) + Impact(25) + Differentiation(20) +
 
 ## 🚀 How to Run a Simulation
 
-### Step 0: Scrape Hackathon URL
-```bash
-User: "Simulate https://paygentic-week4.devfolio.co/"
+Hackfish supports two ways to run full hackathon simulations with **verbose display**, **individual agent memory storage**, and **automatic build guide generation**:
 
-Agent scrapes: theme, sponsors, duration, prizes
-If missing info → ask user
+---
+
+### Method 1: Use the Hackathon Simulation Skill (for opencode/AI agent frameworks)
+Load the `hackathon-simulation` skill and use these copy-paste prompts to run a full simulation:
+
+#### Ready-to-Use Prompts
+| Prompt | Features Included |
+|--------|-------------------|
+| `run a hackathon simulation skill for [HACKATHON_URL], display all agent actions, log and store individual agentic memories, total participants 800 teams` | Verbose display, 800 participants, 266 teams, memory storage |
+| `simulate hackathon URL: [URL], 800 participants, display logs, store memories in memories/, generate build guide` | All above + build guide generation |
+| `predict who will win [HACKATHON_URL] with 1000 participants, store all agent memories, output build plan` | Scaled to 1000 participants, includes build plan |
+
+#### Example Skill Run (Meta PyTorch Hackathon)
+```
+User: run a hackathon simulation skill for https://www.scaler.com/school-of-technology/meta-pytorch-hackathon, display, log and store individual agentic memories. total participants 800 teams
+
+Agent: Scraping hackathon URL...
+  ✓ Theme: AI/RL Environments
+  ✓ Sponsors: Meta, PyTorch, Hugging Face
+  ✓ Duration: 48h
+  ✓ Participants: 800
+
+Running 8-tick simulation...
+  ✓ Tick 1: 800 participants broadcast ideas (memories stored)
+  ✓ Tick 2: 266 teams formed (memories stored)
+  ✓ Tick 3: Mentors feedback to top 50 teams
+  ✓ Tick 4: Top 50 refine ideas
+  ✓ Tick 5: Top 50 live pitches + Q&A
+  ✓ Tick 6: Top 20 semi-final Q&A
+  ✓ Tick 7: Top 10 final pitches + demos
+  ✓ Tick 8: Judges deliberate, select winners
+
+  ✓ Build guide generated at build_guides/hackathon_ai_rl_env_2026-05-04/winner_build_guide.md
+  ✓ All memories stored in memories/hackathon_ai_rl_env_2026-05-04/
 ```
 
-### Step 0.5: Create Memory Directory
+---
+
+### Method 2: Direct Python Script Execution
+Run the included `run_simulation.py` for full control (no AI agent required):
 ```bash
-mkdir -p memories/hackathon_<theme>_<date>/{participants,teams,mentors,judges,channels}
+# Run full simulation with 800 participants (default)
+python3 /home/berzi/Documents/hackfish/run_simulation.py
+
+# Modify participant count, theme, or sponsors in the script:
+nano /home/berzi/Documents/hackfish/run_simulation.py
+# Edit line 12: PARTICIPANTS = 800
+# Edit line 10: THEME = "AI/RL Environments"
 ```
 
-### Step 1: Generate Agent Cast
-- Participants: 8-12 with unique IDs, types, seniority, specialties
-- Mentors: 3 (tech, design, domain)
-- Judges: 3 (vc, product, academic)
+#### Script Outputs
+- **Verbose display**: All 8 ticks logged to terminal
+- **Memory storage**: Individual agent folders in `memories/hackathon_<theme>_<date>/`
+  - `participants/*/` (idea.md, broadcast.md, team.md)
+  - `teams/*/` (discussion.md, decisions.md, pitch.md)
+  - `mentors/*/` (feedback.md)
+  - `judges/*/` (scores.md, deliberation.md)
+- **Build guide**: Auto-generated in `build_guides/hackathon_<theme>_<date>/winner_build_guide.md`
+- **Winner summary**: `memories/hackathon_<theme>_<date>/winner_summary.md`
 
-### Step 2: Run 48-Tick Simulation
-- **Ticks 1-16**: Discuss, brainstorm, mentor verification
-- **Ticks 17-32**: Shape ideas, team formation, mentor sign-off
-- **Ticks 33-48**: Develop, pitch, judge, announce winner
+---
 
-### Step 3: Generate Build Guide
-After Tick 48, create `build_guides/hackathon_<theme>_<date>/winner_build_guide.md` with:
-- Tech stack
-- Sponsor API integration steps
-- Hour-by-hour 48h schedule
-- Code snippets
-- Pitch deck (30-sec, 2-min, 5-min)
-- Q&A prep
+### Simulation Steps (Both Methods)
+1. **Scrape hackathon URL** → Extract theme, sponsors, duration, participant count
+2. **Generate participants** → 800 participants → ~266 teams of 3
+3. **Run 8-tick simulation** → Parallel agent actions, verbose logging
+4. **Store all memories** → Individual markdown files per agent
+5. **Generate build guide** → Tech stack, schedule, code snippets, pitch deck
 
 ---
 
